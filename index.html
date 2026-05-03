@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+<html lang="ro">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="favicon.png" type="image/x-icon">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+    
+    <title>[darius swim]</title>
+
+    <style>
+        :root {
+            --primary-color: #ff0000;
+            --bg-dark: #0f0f0f;
+            --text-main: #ffffff;
+            --text-muted: #cccccc;
+            --transition-speed: 0.4s;
+        }
+
+        body {
+            background-color: var(--bg-dark);
+            background-image: radial-gradient(circle at 50% -20%, #222, var(--bg-dark));
+            color: var(--text-main);
+            font-family: 'Segoe UI', Roboto, Helvetica, Arial, sans-serif;
+            padding-bottom: 80px;
+            overflow-x: hidden;
+        }
+
+        /* Logo - FARA GLOW */
+        .logo-container {
+            padding: 40px 0;
+        }
+        
+        .logo-container img {
+            transition: transform 0.6s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+            filter: none !important; /* Am scos orice filtru de umbra sau glow */
+        }
+
+        .logo-container img:hover {
+            transform: scale(1.05);
+        }
+
+        /* Grid Setup - 5 coloane */
+        .movie-grid-container {
+            padding: 0 4%;
+        }
+
+        @media (min-width: 1200px) {
+            .col-five {
+                flex: 0 0 20%;
+                max-width: 20%;
+                padding: 20px; /* Padding marit pentru postere o idee mai mici */
+            }
+        }
+
+        /* Movie Card */
+        .movie-card {
+            position: relative;
+            margin-bottom: 25px;
+            cursor: pointer;
+        }
+
+        .poster-wrapper {
+            position: relative;
+            border-radius: 12px;
+            overflow: hidden;
+            box-shadow: 0 10px 25px rgba(0,0,0,0.5);
+            transition: all var(--transition-speed) ease;
+        }
+
+        .movie-poster {
+            width: 100%;
+            height: auto;
+            aspect-ratio: 2/3;
+            object-fit: cover;
+            display: block;
+            transition: transform 0.6s ease;
+        }
+
+        /* Overlay */
+        .card-overlay {
+            position: absolute;
+            top: 0; left: 0; width: 100%; height: 100%;
+            background: rgba(0, 0, 0, 0.6);
+            opacity: 0;
+            transition: opacity var(--transition-speed);
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+
+        .play-icon {
+            font-size: 2.5rem;
+            color: white;
+            transform: scale(0.7);
+            transition: transform var(--transition-speed);
+        }
+
+        /* Hover Card */
+        .movie-card:hover .poster-wrapper {
+            transform: translateY(-8px);
+            box-shadow: 0 15px 30px rgba(0, 0, 0, 0.8);
+        }
+
+        .movie-card:hover .movie-poster {
+            transform: scale(1.08);
+        }
+
+        .movie-card:hover .card-overlay {
+            opacity: 1;
+        }
+
+        .movie-card:hover .play-icon {
+            transform: scale(1);
+        }
+
+        /* Titlu - Fara Glow */
+        .movie-info {
+            margin-top: 12px;
+            text-align: center;
+            font-weight: 500;
+            font-size: 0.9rem;
+            color: var(--text-muted);
+            transition: color 0.3s;
+            white-space: nowrap;
+            overflow: hidden;
+            text-overflow: ellipsis;
+        }
+
+        .movie-card:hover .movie-info {
+            color: var(--text-main);
+        }
+
+        /* Scrollbar */
+        ::-webkit-scrollbar { width: 8px; }
+        ::-webkit-scrollbar-track { background: #111; }
+        ::-webkit-scrollbar-thumb { background: #333; border-radius: 10px; }
+        ::-webkit-scrollbar-thumb:hover { background: var(--primary-color); }
+    </style>
+</head>
+<body>
+    
+    <div class="container-fluid movie-grid-container">
+        <div class="text-center logo-container">
+            <a href="index.html">
+                <img src="logo.png" alt="[darius swim]" width="200px" class="img-fluid">
+            </a>
+        </div>
+
+        <div class="row" id="movie-grid">
+            <!-- Injectat prin JS -->
+        </div>
+    </div>
+
+    <script src="filme.js"></script>
+    <script>
+        const movieGrid = document.getElementById('movie-grid');
+        
+        filme.forEach(film => {
+            const filmHTML = `
+                <div class="col-6 col-md-4 col-five">
+                    <div class="movie-card" onclick="window.location.href='play.html?id=${encodeURIComponent(film.id)}'">
+                        <div class="poster-wrapper">
+                            <img src="${film.poster}" alt="${film.titlu}" class="movie-poster" loading="lazy">
+                            <div class="card-overlay">
+                                <i class="fas fa-play-circle play-icon"></i>
+                            </div>
+                        </div>
+                        <div class="movie-info">
+                            ${film.titlu}
+                        </div>
+                    </div>
+                </div>
+            `;
+            movieGrid.innerHTML += filmHTML;
+        });
+    </script>
+</body>
+</html>

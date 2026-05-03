@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="favicon.png" type="image/x-icon">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css">
+    
+    <title>[darius swim]</title>
+
+    <style>
+        body {
+            background-color: rgb(25, 25, 25);
+            color: white;
+            padding-bottom: 50px;
+        }
+            .movie-card {
+            transition: transform 0.2s;
+            margin-bottom: 20px; /* Mai puțin spațiu jos pentru a urca rândurile */
+        }
+
+        /* Forțăm 5 pe rând cu mărime maximă pe ecrane mari */
+        @media (min-width: 1200px) {
+            .col-five {
+                flex: 0 0 20%;
+                max-width: 20%;
+                padding: 15px; /* Spațiu generos între ele */
+            }
+        }
+
+        .movie-poster {
+            border-radius: 12px; /* Rotunjire puțin mai mare pentru postere mari */
+            box-shadow: 0 10px 20px rgba(0,0,0,0.6); /* Umbră mai pronunțată */
+            width: 100%;
+            height: auto;
+            aspect-ratio: 2/3;
+            object-fit: cover;
+        }
+
+    </style>
+</head>
+<body>
+    
+    <div class="container-fluid mt-4" style="padding: 0 5%;">
+        <div class="text-center mb-5">
+            <a href="index.html">
+                <img src="logo.png" alt="[darius swim]" width="200px" class="img-fluid">
+            </a>
+        </div>
+
+        <!-- Aici va fi injectata lista de filme automat din JavaScript -->
+        <div class="row" id="movie-grid"></div>
+    </div>
+
+    <!-- Scripturile incarcate la final pentru viteza -->
+    <script src="filme.js"></script>
+    <script>
+        // Acest cod ia lista din filme.js si o pune pe ecran
+        const movieGrid = document.getElementById('movie-grid');
+        
+        filme.forEach(film => {
+        const filmHTML = `
+            <div class="col-6 col-md-4 col-five movie-card">
+                <a href="play.html?id=${film.id}">
+                    <img src="${film.poster}" alt="${film.titlu}" class="movie-poster">
+                </a>
+            </div>
+        `;
+        movieGrid.innerHTML += filmHTML;
+    });
+    </script>
+</body>
+</html>
