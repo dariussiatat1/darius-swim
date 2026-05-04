@@ -35,8 +35,6 @@ const filme = [
         poster: "https://m.media-amazon.com/images/M/MV5BODE2NzNhMDctYjUzMC00Y2M5LWI2Y2EtODJkZTFjN2Y5ODlmXkEyXkFqcGc@._V1_FMjpg_UX1000_.jpg",
         codEmbed: '<iframe src="https://vidsrc.net/embed/movie?imdb=tt0413300" scrolling="no" frameborder="0" allowfullscreen="true" webkitallowfullscreen="true" mozallowfullscreen="true" height="500px" width="100%"></iframe>'
     },
-
-    // --- SERIA SPIDER-VERSE ---
     {
         id: "Spider-Man: Into the Spider-Verse (2018)",
         titlu: "Spider-Man: Into the Spider-Verse (2018)",
@@ -98,13 +96,13 @@ const filme = [
         codEmbed: '<iframe src="https://vidsrc.net/embed/movie?imdb=tt0071562" scrolling="no" frameborder="0" allowfullscreen="true" webkitallowfullscreen="true" mozallowfullscreen="true" height="500px" width="100%"></iframe>'
     },
     {
-        id: "Five Nights at Freddy's (2023)",
+        id: "Five Nights at Freddys (2023)",
         titlu: "Five Nights at Freddy's (2023)",
         poster: "https://m.media-amazon.com/images/M/MV5BNzFkMDE2ZmEtOWMwNy00MWM2LThlNjMtZWQzNWY5MTJjZjcxXkEyXkFqcGc@._V1_FMjpg_UX1000_.jpg",
         codEmbed: '<iframe src="https://vidsrc.net/embed/movie?imdb=tt4589218" scrolling="no" frameborder="0" allowfullscreen="true" webkitallowfullscreen="true" mozallowfullscreen="true"></iframe>'
     },
     {
-        id: "Five Nights at Freddy's 2 (2025)",
+        id: "Five Nights at Freddys 2 (2025)",
         titlu: "Five Nights at Freddy's 2 (2025)",
         poster: "https://m.media-amazon.com/images/M/MV5BZmQ3NmIxNTgtYjFiNS00NzliLWI0YzAtZDkxY2E0YWIxZDEwXkEyXkFqcGc@._V1_.jpg",
         codEmbed: '<iframe src="https://vidsrc.net/embed/movie?imdb=tt30274401" scrolling="no" frameborder="0" allowfullscreen="true" webkitallowfullscreen="true" mozallowfullscreen="true" height="500px" width="100%"></iframe>'
