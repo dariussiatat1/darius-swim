@@ -1,5 +1,4 @@
 const filme = [
-    // --- SERIA AVATAR ---
     {
         id: "Avatar (2009)",
         titlu: "Avatar (2009)",
@@ -18,8 +17,6 @@ const filme = [
         poster: "https://m.media-amazon.com/images/M/MV5BZDYxY2I1OGMtN2Y4MS00ZmU1LTgyNDAtODA0MzAyYjI0N2Y2XkEyXkFqcGc@._V1_FMjpg_UX1000_.jpg",
         codEmbed: '<iframe src="https://vidsrc.net/embed/movie?imdb=tt1757678" scrolling="no" frameborder="0" allowfullscreen="true" webkitallowfullscreen="true" mozallowfullscreen="true" height="500px" width="100%"></iframe>'
     },
-
-    // --- SERIA SPIDER-MAN (Sam Raimi) ---
     {
         id: "Spider-Man (2002)",
         titlu: "Spider-Man (2002)",
@@ -52,8 +49,6 @@ const filme = [
         poster: "https://m.media-amazon.com/images/M/MV5BNThiZjA3MjItZGY5Ni00ZmJhLWEwN2EtOTBlYTA4Y2E0M2ZmXkEyXkFqcGc@._V1_.jpg",
         codEmbed: '<iframe src="https://vidsrc.net/embed/movie?imdb=tt9362722" scrolling="no" frameborder="0" allowfullscreen="true" webkitallowfullscreen="true" mozallowfullscreen="true" height="500px" width="100%"></iframe>'
     },
-
-    // --- SERIA BACK TO THE FUTURE ---
     {
         id: "Back to the Future (1985)",
         titlu: "Back to the Future (1985)",
@@ -72,8 +67,6 @@ const filme = [
         poster: "https://m.media-amazon.com/images/M/MV5BNTNkNzJmY2MtOGNjYi00NDJmLWIyZTQtNmFmMGQ5M2VlOTI0XkEyXkFqcGc@._V1_.jpg",
         codEmbed: '<iframe src="https://vidsrc.net/embed/movie?imdb=tt0099088" scrolling="no" frameborder="0" allowfullscreen="true" webkitallowfullscreen="true" mozallowfullscreen="true" height="500px" width="100%"></iframe>'
     },
-
-    // --- SERIA BATMAN (Nolan) ---
     {
         id: "Batman Begins (2005)",
         titlu: "Batman Begins (2005)",
@@ -92,8 +85,6 @@ const filme = [
         poster: "https://m.media-amazon.com/images/M/MV5BMTk4ODQzNDY3Ml5BMl5BanBnXkFtZTcwODA0NTM4Nw@@._V1_FMjpg_UX1000_.jpg",
         codEmbed: '<iframe src="https://vidsrc.net/embed/movie?imdb=tt1345836" scrolling="no" frameborder="0" allowfullscreen="true" webkitallowfullscreen="true" mozallowfullscreen="true" height="500px" width="100%"></iframe>'
     },
-
-    // --- SERIA THE GODFATHER ---
     {
         id: "The Godfather (1972)",
         titlu: "The Godfather (1972)",
@@ -106,8 +97,6 @@ const filme = [
         poster: "https://m.media-amazon.com/images/M/MV5BMDIxMzBlZDktZjMxNy00ZGI4LTgxNDEtYWRlNzRjMjJmOGQ1XkEyXkFqcGc@._V1_.jpg",
         codEmbed: '<iframe src="https://vidsrc.net/embed/movie?imdb=tt0071562" scrolling="no" frameborder="0" allowfullscreen="true" webkitallowfullscreen="true" mozallowfullscreen="true" height="500px" width="100%"></iframe>'
     },
-
-    // --- SERIA FIVE NIGHTS AT FREDDY'S ---
     {
         id: "Five Nights at Freddy's (2023)",
         titlu: "Five Nights at Freddy's (2023)",
@@ -120,8 +109,6 @@ const filme = [
         poster: "https://m.media-amazon.com/images/M/MV5BZmQ3NmIxNTgtYjFiNS00NzliLWI0YzAtZDkxY2E0YWIxZDEwXkEyXkFqcGc@._V1_.jpg",
         codEmbed: '<iframe src="https://vidsrc.net/embed/movie?imdb=tt30274401" scrolling="no" frameborder="0" allowfullscreen="true" webkitallowfullscreen="true" mozallowfullscreen="true" height="500px" width="100%"></iframe>'
     },
-
-    // --- SERIA MARIO ---
     {
         id: "The Super Mario Bros. Movie (2023)",
         titlu: "The Super Mario Bros. Movie (2023)",
@@ -134,8 +121,6 @@ const filme = [
         poster: "https://m.media-amazon.com/images/M/MV5BMDg5MjRkNWEtYmU1Mi00MTExLTk5MDQtY2RiMWVkZWNiOThjXkEyXkFqcGc@._V1_FMjpg_UX1000_.jpg",
         codEmbed: '<iframe src="https://vidsrc.net/embed/movie?imdb=tt28650488" scrolling="no" frameborder="0" allowfullscreen="true" webkitallowfullscreen="true" mozallowfullscreen="true" height="500px" width="100%"></iframe>'
     },
-
-    // --- SERIA SIRENELE ---
     {
         id: "Sirenele: Secretul medalionului (2025)",
         titlu: "Sirenele: Secretul medalionului (2025)",
@@ -148,8 +133,6 @@ const filme = [
         poster: "https://m.media-amazon.com/images/M/MV5BYjU0YzY3ODEtYTE0NS00Y2Q5LTkxYmUtODFjZWIzMDg5NGRkXkEyXkFqcGc@._V1_FMjpg_UX1000_.jpg",
         codEmbed: '<iframe src="https://vidsrc.net/embed/movie?imdb=tt37252720" scrolling="no" frameborder="0" allowfullscreen="true" webkitallowfullscreen="true" mozallowfullscreen="true" height="500px" width="100%"></iframe>'
     },
-
-    // --- ALTE FILME (A-Z sau Tematic) ---
     {
         id: "12 Angry Men (1957)",
         titlu: "12 Angry Men (1957)",
@@ -161,6 +144,12 @@ const filme = [
         titlu: "2001: A Space Odyssey (1968)",
         poster: "https://m.media-amazon.com/images/M/MV5BNjU0NDFkMTQtZWY5OS00MmZhLTg3Y2QtZmJhMzMzMWYyYjc2XkEyXkFqcGc@._V1_.jpg",
         codEmbed: '<iframe src="https://vidsrc.net/embed/movie?imdb=tt0062622" scrolling="no" frameborder="0" allowfullscreen="true" webkitallowfullscreen="true" mozallowfullscreen="true" height="500px" width="100%"></iframe>'
+    },
+    {
+        id: "Amadeus (1984)",
+        titlu: "Amadeus (1984)",
+        poster: "https://m.media-amazon.com/images/M/MV5BMzc2MjM0NTMtOGY4NC00NzY1LWE2ODUtZjMzY2RhNGNkZDAyXkEyXkFqcGc@._V1_.jpg",
+        codEmbed: '<iframe src="https://vidsrc.net/embed/movie?imdb=tt0086879" scrolling="no" frameborder="0" allowfullscreen="true" webkitallowfullscreen="true" mozallowfullscreen="true" height="500px" width="100%"></iframe>'
     },
     {
         id: "Fight Club (1999)",
@@ -197,6 +186,12 @@ const filme = [
         titlu: "Knives Out (2019)",
         poster: "https://m.media-amazon.com/images/M/MV5BZDU5ZTRkYmItZjg0Mi00ZTQwLThjMWItNWM3MTMxMzVjZmVjXkEyXkFqcGc@._V1_.jpg",
         codEmbed: ' <video controls src="https://sod1.antenaplay.ro/antena1/2025/10/17/f96d69b7e159f09916f55cadc69d6220c859e1a8b8c8b8905df56a562036db11_,480p-wide,720p-wide,1080p,.mp4.urlset/master.m3u8?version=1&session=f5318acd40b4df16512f&starttime=1771278974&endtime=1771286174&source=web&guid=2kbfb4UrtDB&token=HRYK2KCtLSRjMpIz6wKjVbuUP0U=" width="80%"></video>'
+    },
+    {
+        id: "Kung Pow: Enter the Fist (2002)",
+        titlu: "Kung Pow: Enter the Fist (2002)",
+        poster: "https://m.media-amazon.com/images/M/MV5BMDBkMDY0MTQtMzUzMS00OTk2LTlmNmItZmQ2ODc5MmEwMDA1XkEyXkFqcGc@._V1_FMjpg_UX1000_.jpg",
+        codEmbed: '<iframe src="https://vidsrc.net/embed/movie?imdb=tt0240468" scrolling="no" frameborder="0" allowfullscreen="true" webkitallowfullscreen="true" mozallowfullscreen="true" height="500px" width="100%"></iframe>'
     },
     {
         id: "La La Land (2016)",
@@ -271,6 +266,24 @@ const filme = [
         codEmbed: '<iframe src="https://vidsrc.net/embed/movie?imdb=tt0133093" scrolling="no" frameborder="0" allowfullscreen="true" webkitallowfullscreen="true" mozallowfullscreen="true" height="500px" width="100%"></iframe>'
     },
     {
+        id: "The Hangover (2009)",
+        titlu: "The Hangover (2009)",
+        poster: "https://m.media-amazon.com/images/M/MV5BNDI2MzBhNzgtOWYyOS00NDM2LWE0OGYtOGQ0M2FjMTI2NTllXkEyXkFqcGc@._V1_.jpg",
+        codEmbed: '<iframe src="https://vidsrc.net/embed/movie?imdb=tt1119646" scrolling="no" frameborder="0" allowfullscreen="true" webkitallowfullscreen="true" mozallowfullscreen="true" height="500px" width="100%"></iframe>'
+    },
+    {
+        id: "The Hangover Part II (2011)",
+        titlu: "The Hangover Part II (2011)",
+        poster: "https://m.media-amazon.com/images/M/MV5BMTM2MTM4MzY2OV5BMl5BanBnXkFtZTcwNjQ3NzI4NA@@._V1_FMjpg_UX1000_.jpg",
+        codEmbed: '<iframe src="https://vidsrc.net/embed/movie?imdb=tt1411697" scrolling="no" frameborder="0" allowfullscreen="true" webkitallowfullscreen="true" mozallowfullscreen="true" height="500px" width="100%"></iframe>'
+    },
+    {
+        id: "The Hangover Part III (2013)",
+        titlu: "The Hangover Part III (2013)",
+        poster: "https://m.media-amazon.com/images/M/MV5BMTA0NjE1MzMzODheQTJeQWpwZ15BbWU3MDY4MTQ3Mzk@._V1_.jpg",
+        codEmbed: '<iframe src="https://vidsrc.net/embed/movie?imdb=tt1951261" scrolling="no" frameborder="0" allowfullscreen="true" webkitallowfullscreen="true" mozallowfullscreen="true" height="500px" width="100%"></iframe>'
+    },
+    {
         id: "The Phantom of the Opera (2004)",
         titlu: "The Phantom of the Opera (2004)",
         poster: "https://m.media-amazon.com/images/M/MV5BNDczNzg4OTM3MV5BMl5BanBnXkFtZTcwOTQzMTEzMw@@._V1_FMjpg_UX1000_.jpg",
@@ -306,8 +319,6 @@ const filme = [
         poster: "https://m.media-amazon.com/images/M/MV5BMDFjOWFkYzktYzhhMC00NmYyLTkwY2EtYjViMDhmNzg0OGFkXkEyXkFqcGc@._V1_FMjpg_UX1000_.jpg",
         codEmbed: '<iframe src="https://vidsrc.net/embed/movie?imdb=tt2582802" scrolling="no" frameborder="0" allowfullscreen="true" webkitallowfullscreen="true" mozallowfullscreen="true" height="500px" width="100%"></iframe>'
     },
-
-    // --- ANIME & ANIMATIE (Filme) ---
     {
         id: "Spirited Away (2001)",
         titlu: "Spirited Away (2001)",
@@ -320,8 +331,6 @@ const filme = [
         poster: "https://m.media-amazon.com/images/M/MV5BMjI1ODZkYTgtYTY3Yy00ZTJkLWFkOTgtZDUyYWM4MzQwNjk0XkEyXkFqcGc@._V1_FMjpg_UX1000_.jpg",
         codEmbed: '<iframe width="640" height="360" data-src="https://playhydrax.com/?v=0j2zWJR0Q" frameborder="0" scrolling="0" allowfullscreen="" src="https://playhydrax.com/?v=0j2zWJR0Q" class="view-iframe"></iframe>'
     },
-
-    // --- SERIALE TV ---
     {
         id: "Breaking Bad",
         titlu: "Breaking Bad",
