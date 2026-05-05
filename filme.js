@@ -138,6 +138,12 @@ const filme = [
         codEmbed: '<iframe src="https://vidsrc.net/embed/movie?imdb=tt0050083" scrolling="no" frameborder="0" allowfullscreen="true" webkitallowfullscreen="true" mozallowfullscreen="true" height="500px" width="100%"></iframe>'
     },
     {
+        id: "21 Jump Street (2012)",
+        titlu: "21 Jump Street (2012)",
+        poster: "https://m.media-amazon.com/images/M/MV5BMTg2NjJiODctM2IyMS00MmQ5LWI1YmQtNTBjMTI4M2U2YzA5XkEyXkFqcGc@._V1_FMjpg_UX1000_.jpg",
+        codEmbed: '<iframe src="https://vidsrc.net/embed/movie?imdb=tt1232829" scrolling="no" frameborder="0" allowfullscreen="true" webkitallowfullscreen="true" mozallowfullscreen="true" height="500px" width="100%"></iframe>'
+    },
+    {
         id: "2001: A Space Odyssey (1968)",
         titlu: "2001: A Space Odyssey (1968)",
         poster: "https://m.media-amazon.com/images/M/MV5BNjU0NDFkMTQtZWY5OS00MmZhLTg3Y2QtZmJhMzMzMWYyYjc2XkEyXkFqcGc@._V1_.jpg",
@@ -148,6 +154,42 @@ const filme = [
         titlu: "Amadeus (1984)",
         poster: "https://m.media-amazon.com/images/M/MV5BMzc2MjM0NTMtOGY4NC00NzY1LWE2ODUtZjMzY2RhNGNkZDAyXkEyXkFqcGc@._V1_.jpg",
         codEmbed: '<iframe src="https://vidsrc.net/embed/movie?imdb=tt0086879" scrolling="no" frameborder="0" allowfullscreen="true" webkitallowfullscreen="true" mozallowfullscreen="true" height="500px" width="100%"></iframe>'
+    },
+    {
+        id: "American Psycho (2000)",
+        titlu: "American Psycho (2000)",
+        poster: "https://m.media-amazon.com/images/M/MV5BNzBjM2I5ZjUtNmIzNy00OGNkLWIwZDMtOTAwYWUwMzA2YjdlXkEyXkFqcGc@._V1_FMjpg_UX1000_.jpg",
+        codEmbed: '<iframe src="https://vidsrc.net/embed/movie?imdb=tt0144084" scrolling="no" frameborder="0" allowfullscreen="true" webkitallowfullscreen="true" mozallowfullscreen="true" height="500px" width="100%"></iframe>'
+    },
+    {
+        id: "All Quiet on the Western Front (2022)",
+        titlu: "All Quiet on the Western Front (2022)",
+        poster: "https://m.media-amazon.com/images/M/MV5BOWJiYWMyYTktZThhOS00ZjgxLWE0YTQtZDMyNTQxMjMyYjI2XkEyXkFqcGc@._V1_FMjpg_UX1000_.jpg",
+        codEmbed: '<iframe src="https://vidsrc.net/embed/movie?imdb=tt1016150" scrolling="no" frameborder="0" allowfullscreen="true" webkitallowfullscreen="true" mozallowfullscreen="true" height="500px" width="100%"></iframe>'
+    },
+    {
+        id: "Bullet Train (2022)",
+        titlu: "Bullet Train (2022)",
+        poster: "https://m.media-amazon.com/images/M/MV5BODUyZjkxZDMtZGI3ZC00ZmEwLTgwMTUtYTU4OTQ5YjU4ZjRlXkEyXkFqcGc@._V1_.jpg",
+        codEmbed: '<iframe src="https://vidsrc.net/embed/movie?imdb=tt12593682" scrolling="no" frameborder="0" allowfullscreen="true" webkitallowfullscreen="true" mozallowfullscreen="true" height="500px" width="100%"></iframe>'
+    },
+    {
+        id: "Blade Runner 2049 (2017)",
+        titlu: "Blade Runner 2049 (2017)",
+        poster: "https://m.media-amazon.com/images/M/MV5BNzA1Njg4NzYxOV5BMl5BanBnXkFtZTgwODk5NjU3MzI@._V1_.jpg",
+        codEmbed: '<iframe src="https://vidsrc.net/embed/movie?imdb=tt1856101" scrolling="no" frameborder="0" allowfullscreen="true" webkitallowfullscreen="true" mozallowfullscreen="true" height="500px" width="100%"></iframe>'
+    },
+    {
+        id: "Catch Me If You Can (2002)",
+        titlu: "Catch Me If You Can (2002)",
+        poster: "https://m.media-amazon.com/images/M/MV5BMTY5MzYzNjc5NV5BMl5BanBnXkFtZTYwNTUyNTc2._V1_FMjpg_UX1000_.jpg",
+        codEmbed: '<iframe src="https://vidsrc.net/embed/movie?imdb=tt0264464" scrolling="no" frameborder="0" allowfullscreen="true" webkitallowfullscreen="true" mozallowfullscreen="true" height="500px" width="100%"></iframe>'
+    },
+    {
+        id: "Dead Poets Society (1989)",
+        titlu: "Dead Poets Society (1989)",
+        poster: "https://m.media-amazon.com/images/M/MV5BMDYwNGVlY2ItMWYxMS00YjZiLWE5MTAtYWM5NWQ2ZWJjY2Q3XkEyXkFqcGc@._V1_.jpg",
+        codEmbed: '<iframe src="https://vidsrc.net/embed/movie?imdb=tt0097165" scrolling="no" frameborder="0" allowfullscreen="true" webkitallowfullscreen="true" mozallowfullscreen="true" height="500px" width="100%"></iframe>'
     },
     {
         id: "Fight Club (1999)",
@@ -166,6 +208,18 @@ const filme = [
         titlu: "Good Will Hunting (1997)",
         poster: "https://m.media-amazon.com/images/M/MV5BNDdjZGQ5YzEtNTc2My00Mjc0LWFlMTctYzkwMzZlNzdiZWYzXkEyXkFqcGc@._V1_.jpg",
         codEmbed: '<iframe src="https://vidsrc.net/embed/movie?imdb=tt0119217" scrolling="no" frameborder="0" allowfullscreen="true" webkitallowfullscreen="true" mozallowfullscreen="true" height="500px" width="100%"></iframe>'
+    },
+    {
+        id: "Gone Girl (2014)",
+        titlu: "Gone Girl (2014)",
+        poster: "https://m.media-amazon.com/images/M/MV5BMTk0MDQ3MzAzOV5BMl5BanBnXkFtZTgwNzU1NzE3MjE@._V1_.jpg",
+        codEmbed: '<iframe src="https://vidsrc.net/embed/movie?imdb=tt2267998" scrolling="no" frameborder="0" allowfullscreen="true" webkitallowfullscreen="true" mozallowfullscreen="true" height="500px" width="100%"></iframe>'
+    },
+    {
+        id: "Hacksaw Ridge (2016)",
+        titlu: "Hacksaw Ridge (2016)",
+        poster: "https://m.media-amazon.com/images/M/MV5BMjQ1NjM3MTUxNV5BMl5BanBnXkFtZTgwMDc5MTY5OTE@._V1_FMjpg_UX1000_.jpg",
+        codEmbed: '<iframe src="https://vidsrc.net/embed/movie?imdb=tt2119532" scrolling="no" frameborder="0" allowfullscreen="true" webkitallowfullscreen="true" mozallowfullscreen="true" height="500px" width="100%"></iframe>'
     },
     {
         id: "Inception (2010)",
@@ -222,6 +276,12 @@ const filme = [
         codEmbed: '<iframe src="https://vidsrc.net/embed/movie?imdb=tt0110912" scrolling="no" frameborder="0" allowfullscreen="true" webkitallowfullscreen="true" mozallowfullscreen="true" height="500px" width="100%"></iframe>'
     },
     {
+        id: "Prisoners (2013)",
+        titlu: "Prisoners (2013)",
+        poster: "https://m.media-amazon.com/images/M/MV5BMTg0NTIzMjQ1NV5BMl5BanBnXkFtZTcwNDc3MzM5OQ@@._V1_FMjpg_UX1000_.jpg",
+        codEmbed: '<iframe src="https://vidsrc.net/embed/movie?imdb=tt1392214" scrolling="no" frameborder="0" allowfullscreen="true" webkitallowfullscreen="true" mozallowfullscreen="true" height="500px" width="100%"></iframe>'
+    },
+    {
         id: "Scarface (1983)",
         titlu: "Scarface (1983)",
         poster: "https://m.media-amazon.com/images/M/MV5BNDUzYjY0NmUtMDM4OS00Y2Q5LWJiODYtNTk0ZTk0YjZhMTg1XkEyXkFqcGc@._V1_.jpg",
@@ -234,6 +294,12 @@ const filme = [
         codEmbed: '<iframe src="https://vidsrc.net/embed/movie?imdb=tt0114369" scrolling="no" frameborder="0" allowfullscreen="true" webkitallowfullscreen="true" mozallowfullscreen="true" height="500px" width="100%"></iframe>'
     },
     {
+        id: "Superbad (2007)",
+        titlu: "Superbad (2007)",
+        poster: "https://m.media-amazon.com/images/M/MV5BNjk0MzdlZGEtNTRkOC00ZDRiLWJkYjAtMzUzYTRiNzk1YTViXkEyXkFqcGc@._V1_.jpg",
+        codEmbed: '<iframe src="https://vidsrc.net/embed/movie?imdb=tt0829482" scrolling="no" frameborder="0" allowfullscreen="true" webkitallowfullscreen="true" mozallowfullscreen="true" height="500px" width="100%"></iframe>'
+    },
+    {
         id: "Shutter Island (2010)",
         titlu: "Shutter Island (2010)",
         poster: "https://m.media-amazon.com/images/M/MV5BN2FjNWExYzEtY2YzOC00YjNlLTllMTQtNmIwM2Q1YzBhOWM1XkEyXkFqcGc@._V1_.jpg",
@@ -244,6 +310,12 @@ const filme = [
         titlu: "Superman (2025)",
         poster: "https://m.media-amazon.com/images/M/MV5BOGMwZGJiM2EtMzEwZC00YTYzLWIxNzYtMmJmZWNlZjgxZTMwXkEyXkFqcGc@._V1_FMjpg_UX1000_.jpg",
         codEmbed: '<iframe src="https://vidsrc.net/embed/movie?imdb=tt5950044" scrolling="no" frameborder="0" allowfullscreen="true" webkitallowfullscreen="true" mozallowfullscreen="true" height="500px" width="100%"></iframe>'
+    },
+    {
+        id: "Sound of Freedom (2023)",
+        titlu: "Sound of Freedom (2023)",
+        poster: "https://m.media-amazon.com/images/M/MV5BMzU5MmVkODQtZWM5ZC00MjRiLWIwOTMtN2ViZGM5MjU5Nzc1XkEyXkFqcGc@._V1_FMjpg_UX1000_.jpg",
+        codEmbed: '<iframe src="https://vidsrc.net/embed/movie?imdb=tt7599146" scrolling="no" frameborder="0" allowfullscreen="true" webkitallowfullscreen="true" mozallowfullscreen="true" height="500px" width="100%"></iframe>'
     },
     {
         id: "The Fantastic Four: First Steps (2025)",
@@ -262,6 +334,12 @@ const filme = [
         titlu: "The Matrix (1999)",
         poster: "https://m.media-amazon.com/images/M/MV5BN2NmN2VhMTQtMDNiOS00NDlhLTliMjgtODE2ZTY0ODQyNDRhXkEyXkFqcGc@._V1_.jpg",
         codEmbed: '<iframe src="https://vidsrc.net/embed/movie?imdb=tt0133093" scrolling="no" frameborder="0" allowfullscreen="true" webkitallowfullscreen="true" mozallowfullscreen="true" height="500px" width="100%"></iframe>'
+    },
+    {
+        id: "The Grand Budapest Hotel (2014)",
+        titlu: "The Grand Budapest Hotel (2014)",
+        poster: "https://m.media-amazon.com/images/M/MV5BMzM5NjUxOTEyMl5BMl5BanBnXkFtZTgwNjEyMDM0MDE@._V1_FMjpg_UX1000_.jpg",
+        codEmbed: '<iframe src="https://vidsrc.net/embed/movie?imdb=tt2278388" scrolling="no" frameborder="0" allowfullscreen="true" webkitallowfullscreen="true" mozallowfullscreen="true" height="500px" width="100%"></iframe>'
     },
     {
         id: "The Hangover (2009)",
@@ -306,16 +384,34 @@ const filme = [
         codEmbed: '<iframe src="https://vidsrc.net/embed/movie?imdb=tt0167404" scrolling="no" frameborder="0" allowfullscreen="true" webkitallowfullscreen="true" mozallowfullscreen="true" height="500px" width="100%"></iframe>'
     },
     {
+        id: "The Prince of Egypt (1998)",
+        titlu: "The Prince of Egypt (1998)",
+        poster: "https://m.media-amazon.com/images/M/MV5BMjc4NzU5MDUtNmFkNi00NzI5LWE3NjQtNjJlZDRlNjdhZWYwXkEyXkFqcGc@._V1_FMjpg_UX1000_.jpg",
+        codEmbed: '<iframe src="https://vidsrc.net/embed/movie?imdb=tt0120794" scrolling="no" frameborder="0" allowfullscreen="true" webkitallowfullscreen="true" mozallowfullscreen="true" height="500px" width="100%"></iframe>'
+    },
+    {
         id: "The Whale (2022)",
         titlu: "The Whale (2022)",
         poster: "https://m.media-amazon.com/images/M/MV5BYmNhOWMyNTYtNTljNC00NTU3LWFiYmQtMDBhOGU5NWFhNGU5XkEyXkFqcGc@._V1_FMjpg_UX1000_.jpg",
         codEmbed: '<video controls src="https://vod4ro.antenaplay.ro/antena1/2026/04/30/11fd1c00b90bbea32aab0593025e0497f6e3b325602b47684498fa4443fd4157_,480p-wide,720p-wide,1080p,.mp4.urlset/master.m3u8?version=1&session=ed74f5134f5323989c9e&starttime=1777816733&endtime=1777823933&source=web&guid=F5irCvmp3B3&token=WEtnGo4AKidvwII96JVcwBS2h9o=" width="80%"></video>'
     },
     {
+        id: "The Wolf of Wall Street (2013)",
+        titlu: "The Wolf of Wall Street (2013)",
+        poster: "https://m.media-amazon.com/images/M/MV5BMjIxMjgxNTk0MF5BMl5BanBnXkFtZTgwNjIyOTg2MDE@._V1_.jpg",
+        codEmbed: '<iframe src="https://vidsrc.net/embed/movie?imdb=tt0993846" scrolling="no" frameborder="0" allowfullscreen="true" webkitallowfullscreen="true" mozallowfullscreen="true" height="500px" width="100%"></iframe>'
+    },
+    {
         id: "Whiplash (2014)",
         titlu: "Whiplash (2014)",
         poster: "https://m.media-amazon.com/images/M/MV5BMDFjOWFkYzktYzhhMC00NmYyLTkwY2EtYjViMDhmNzg0OGFkXkEyXkFqcGc@._V1_FMjpg_UX1000_.jpg",
         codEmbed: '<iframe src="https://vidsrc.net/embed/movie?imdb=tt2582802" scrolling="no" frameborder="0" allowfullscreen="true" webkitallowfullscreen="true" mozallowfullscreen="true" height="500px" width="100%"></iframe>'
+    },
+    {
+        id: "KPop Demon Hunters (2025)",
+        titlu: "KPop Demon Hunters (2025)",
+        poster: "https://m.media-amazon.com/images/M/MV5BNTBiYWJlMjQtOTIyMy00NTY4LWFhOWItOWZhNzc3NGMyMjc2XkEyXkFqcGc@._V1_FMjpg_UX1000_.jpg",
+        codEmbed: '<iframe src="https://vidsrc.net/embed/movie?imdb=tt14205554" scrolling="no" frameborder="0" allowfullscreen="true" webkitallowfullscreen="true" mozallowfullscreen="true" height="500px" width="100%"></iframe>'
     },
     {
         id: "Spirited Away (2001)",
