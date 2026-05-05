@@ -27,30 +27,56 @@
             overflow-x: hidden;
         }
 
-        /* Logo - FARA GLOW */
+        /* Logo */
         .logo-container {
             padding: 40px 0;
         }
         
         .logo-container img {
             transition: transform 0.6s cubic-bezier(0.175, 0.885, 0.32, 1.275);
-            filter: none !important; /* Am scos orice filtru de umbra sau glow */
         }
 
         .logo-container img:hover {
             transform: scale(1.05);
         }
 
-        /* Grid Setup - 5 coloane */
+        /* Grid Setup - Centrat cu margini mari pe desktop */
         .movie-grid-container {
-            padding: 0 4%;
+            padding: 0 15px;
+            margin: 0 auto;
+            width: 100%;
         }
 
+        /* Configurație Desktop (6 pe rând + margini) */
         @media (min-width: 1200px) {
-            .col-five {
-                flex: 0 0 20%;
-                max-width: 20%;
-                padding: 20px; /* Padding marit pentru postere o idee mai mici */
+            .movie-grid-container {
+                /* Limităm lățimea la 85% pentru a lăsa spațiu pe margini */
+                max-width: 85%; 
+            }
+
+            .col-six {
+                /* 100% / 6 = 16.66% */
+                flex: 0 0 16.666667%;
+                max-width: 16.666667%;
+                padding: 12px;
+            }
+        }
+
+        /* Configurație Tabletă (3 pe rând) */
+        @media (min-width: 768px) and (max-width: 1199px) {
+            .col-six {
+                flex: 0 0 33.333333%;
+                max-width: 33.333333%;
+                padding: 10px;
+            }
+        }
+
+        /* Configurație Mobil (2 pe rând) */
+        @media (max-width: 767px) {
+            .col-six {
+                flex: 0 0 50%;
+                max-width: 50%;
+                padding: 8px;
             }
         }
 
@@ -97,7 +123,7 @@
             transition: transform var(--transition-speed);
         }
 
-        /* Hover Card */
+        /* Hover Effects */
         .movie-card:hover .poster-wrapper {
             transform: translateY(-8px);
             box-shadow: 0 15px 30px rgba(0, 0, 0, 0.8);
@@ -115,12 +141,12 @@
             transform: scale(1);
         }
 
-        /* Titlu - Fara Glow */
+        /* Movie Info */
         .movie-info {
             margin-top: 12px;
             text-align: center;
             font-weight: 500;
-            font-size: 0.9rem;
+            font-size: 0.85rem;
             color: var(--text-muted);
             transition: color 0.3s;
             white-space: nowrap;
@@ -132,7 +158,7 @@
             color: var(--text-main);
         }
 
-        /* Scrollbar */
+        /* Scrollbar Personalizat */
         ::-webkit-scrollbar { width: 8px; }
         ::-webkit-scrollbar-track { background: #111; }
         ::-webkit-scrollbar-thumb { background: #333; border-radius: 10px; }
@@ -149,32 +175,38 @@
         </div>
 
         <div class="row" id="movie-grid">
-            <!-- Injectat prin JS -->
+            <!-- Conținutul va fi injectat aici de JavaScript -->
         </div>
     </div>
 
+    <!-- Scripturi -->
     <script src="filme.js"></script>
     <script>
         const movieGrid = document.getElementById('movie-grid');
         
-        filme.forEach(film => {
-            const filmHTML = `
-                <div class="col-6 col-md-4 col-five">
-                    <div class="movie-card" onclick="window.location.href='play.html?id=${encodeURIComponent(film.id)}'">
-                        <div class="poster-wrapper">
-                            <img src="${film.poster}" alt="${film.titlu}" class="movie-poster" loading="lazy">
-                            <div class="card-overlay">
-                                <i class="fas fa-play-circle play-icon"></i>
+        // Verificăm dacă datele din filme.js sunt încărcate
+        if (typeof filme !== 'undefined') {
+            filme.forEach(film => {
+                const filmHTML = `
+                    <div class="col-six">
+                        <div class="movie-card" onclick="window.location.href='play.html?id=${encodeURIComponent(film.id)}'">
+                            <div class="poster-wrapper">
+                                <img src="${film.poster}" alt="${film.titlu}" class="movie-poster" loading="lazy">
+                                <div class="card-overlay">
+                                    <i class="fas fa-play-circle play-icon"></i>
+                                </div>
+                            </div>
+                            <div class="movie-info">
+                                ${film.titlu}
                             </div>
                         </div>
-                        <div class="movie-info">
-                            ${film.titlu}
-                        </div>
                     </div>
-                </div>
-            `;
-            movieGrid.innerHTML += filmHTML;
-        });
+                `;
+                movieGrid.innerHTML += filmHTML;
+            });
+        } else {
+            console.error("Eroare: variabila 'filme' nu a fost găsită. Asigură-te că filme.js este încărcat corect.");
+        }
     </script>
 </body>
 </html>

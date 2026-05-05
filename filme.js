@@ -321,13 +321,19 @@ const filme = [
         id: "Spirited Away (2001)",
         titlu: "Spirited Away (2001)",
         poster: "https://m.media-amazon.com/images/M/MV5BNTEyNmEwOWUtYzkyOC00ZTQ4LTllZmUtMjk0Y2YwOGUzYjRiXkEyXkFqcGc@._V1_FMjpg_UX1000_.jpg",
-        codEmbed: '<iframe src="https://vidsrc.net/embed/movie?imdb=tt0245429" scrolling="no" frameborder="0" allowfullscreen="true" webkitallowfullscreen="true" mozallowfullscreen="true" height="500px" width="100%"></iframe>'
+        codEmbed: '<iframe width="640" height="360" data-src="https://playhydrax.com/?v=Tmp8oRvZ2" frameborder="0" scrolling="0" allowfullscreen="" src="https://playhydrax.com/?v=Tmp8oRvZ2" class="view-iframe"></iframe>'
     },
     {
         id: "Your Name. (2016)",
         titlu: "Your Name. (2016)",
         poster: "https://m.media-amazon.com/images/M/MV5BMjI1ODZkYTgtYTY3Yy00ZTJkLWFkOTgtZDUyYWM4MzQwNjk0XkEyXkFqcGc@._V1_FMjpg_UX1000_.jpg",
         codEmbed: '<iframe width="640" height="360" data-src="https://playhydrax.com/?v=0j2zWJR0Q" frameborder="0" scrolling="0" allowfullscreen="" src="https://playhydrax.com/?v=0j2zWJR0Q" class="view-iframe"></iframe>'
+    },
+    {
+        id: "I Want to Eat Your Pancreas (2018)",
+        titlu: "I Want to Eat Your Pancreas (2018)",
+        poster: "https://m.media-amazon.com/images/M/MV5BMTQ1ODIzOGQtOGFkZC00MWViLTgyYmUtNWJkNmIxZjYxMTdmXkEyXkFqcGc@._V1_FMjpg_UX1000_.jpg",
+        codEmbed: '<iframe src="https://bysedikamoum.com/e/ebt5ebcwyoht" allowfullscreen></iframe>'
     },
     {
         id: "Breaking Bad",
