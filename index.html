@@ -4,209 +4,360 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="shortcut icon" href="favicon.png" type="image/x-icon">
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=DM+Mono:wght@400;500&family=DM+Sans:wght@300;400;500;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
-    
     <title>[darius swim]</title>
-
     <style>
         :root {
-            --primary-color: #ff0000;
-            --bg-dark: #0f0f0f;
-            --text-main: #ffffff;
-            --text-muted: #cccccc;
-            --transition-speed: 0.4s;
+            --red: #e8192c;
+            --bg: #0a0a0a;
+            --bg2: #111;
+            --border: rgba(255,255,255,0.07);
+            --text: #f0f0f0;
+            --muted: #888;
+            --card-radius: 10px;
         }
 
+        * { box-sizing: border-box; margin: 0; padding: 0; }
+
         body {
-            background-color: var(--bg-dark);
-            background-image: radial-gradient(circle at 50% -20%, #222, var(--bg-dark));
-            color: var(--text-main);
-            font-family: 'Segoe UI', Roboto, Helvetica, Arial, sans-serif;
-            padding-bottom: 80px;
+            background: var(--bg);
+            color: var(--text);
+            font-family: 'DM Sans', sans-serif;
+            min-height: 100vh;
+            padding-bottom: 60px;
             overflow-x: hidden;
         }
 
-        /* Logo */
-        .logo-container {
-            padding: 40px 0;
-        }
-        
-        .logo-container img {
-            transition: transform 0.6s cubic-bezier(0.175, 0.885, 0.32, 1.275);
-        }
-
-        .logo-container img:hover {
-            transform: scale(1.05);
-        }
-
-        /* Grid Setup - Centrat cu margini mari pe desktop */
-        .movie-grid-container {
-            padding: 0 15px;
-            margin: 0 auto;
-            width: 100%;
-        }
-
-        /* Configurație Desktop (6 pe rând + margini) */
-        @media (min-width: 1200px) {
-            .movie-grid-container {
-                /* Limităm lățimea la 85% pentru a lăsa spațiu pe margini */
-                max-width: 85%; 
-            }
-
-            .col-six {
-                /* 100% / 6 = 16.66% */
-                flex: 0 0 16.666667%;
-                max-width: 16.666667%;
-                padding: 12px;
-            }
-        }
-
-        /* Configurație Tabletă (3 pe rând) */
-        @media (min-width: 768px) and (max-width: 1199px) {
-            .col-six {
-                flex: 0 0 33.333333%;
-                max-width: 33.333333%;
-                padding: 10px;
-            }
-        }
-
-        /* Configurație Mobil (2 pe rând) */
-        @media (max-width: 767px) {
-            .col-six {
-                flex: 0 0 50%;
-                max-width: 50%;
-                padding: 8px;
-            }
-        }
-
-        /* Movie Card */
-        .movie-card {
-            position: relative;
-            margin-bottom: 25px;
-            cursor: pointer;
-        }
-
-        .poster-wrapper {
-            position: relative;
-            border-radius: 12px;
-            overflow: hidden;
-            box-shadow: 0 10px 25px rgba(0,0,0,0.5);
-            transition: all var(--transition-speed) ease;
-        }
-
-        .movie-poster {
-            width: 100%;
-            height: auto;
-            aspect-ratio: 2/3;
-            object-fit: cover;
-            display: block;
-            transition: transform 0.6s ease;
-        }
-
-        /* Overlay */
-        .card-overlay {
-            position: absolute;
-            top: 0; left: 0; width: 100%; height: 100%;
-            background: rgba(0, 0, 0, 0.6);
-            opacity: 0;
-            transition: opacity var(--transition-speed);
+        header {
+            position: sticky;
+            top: 0;
+            z-index: 100;
+            background: rgba(10,10,10,0.92);
+            backdrop-filter: blur(12px);
+            -webkit-backdrop-filter: blur(12px);
+            border-bottom: 1px solid var(--border);
+            padding: 14px 20px;
             display: flex;
             align-items: center;
-            justify-content: center;
+            gap: 12px;
+            flex-wrap: wrap;
         }
 
-        .play-icon {
-            font-size: 2.5rem;
-            color: white;
-            transform: scale(0.7);
-            transition: transform var(--transition-speed);
+        .logo-link { flex-shrink: 0; }
+        .logo-link img { height: 32px; width: auto; display: block; transition: filter 0.2s; }
+        .logo-link:hover img { filter: brightness(0.7); }
+
+        .search-wrap {
+            flex: 1;
+            min-width: 140px;
+            max-width: 420px;
+            position: relative;
         }
 
-        /* Hover Effects */
-        .movie-card:hover .poster-wrapper {
-            transform: translateY(-8px);
-            box-shadow: 0 15px 30px rgba(0, 0, 0, 0.8);
+        .search-icon {
+            position: absolute; left: 14px; top: 50%;
+            transform: translateY(-50%);
+            color: var(--muted); font-size: 0.8rem; pointer-events: none;
         }
 
-        .movie-card:hover .movie-poster {
-            transform: scale(1.08);
+        #search-input {
+            width: 100%;
+            background: var(--bg2);
+            border: 1px solid var(--border);
+            border-radius: 8px;
+            color: var(--text);
+            font-family: 'DM Sans', sans-serif;
+            font-size: 0.9rem;
+            padding: 9px 36px 9px 36px;
+            outline: none;
+            transition: border-color 0.2s, background 0.2s;
         }
+        #search-input:focus { border-color: var(--red); background: #161616; }
+        #search-input::placeholder { color: var(--muted); }
 
-        .movie-card:hover .card-overlay {
-            opacity: 1;
+        .search-clear {
+            position: absolute; right: 10px; top: 50%;
+            transform: translateY(-50%);
+            background: none; border: none; color: var(--muted);
+            cursor: pointer; font-size: 0.75rem; padding: 4px;
+            display: none; line-height: 1;
         }
+        .search-clear:hover { color: var(--text); }
 
-        .movie-card:hover .play-icon {
-            transform: scale(1);
-        }
-
-        /* Movie Info */
-        .movie-info {
-            margin-top: 12px;
-            text-align: center;
-            font-weight: 500;
-            font-size: 0.85rem;
-            color: var(--text-muted);
-            transition: color 0.3s;
-            white-space: nowrap;
+        /* ── LANG TOGGLE ── */
+        .lang-toggle {
+            display: flex;
+            align-items: center;
+            background: var(--bg2);
+            border: 1px solid var(--border);
+            border-radius: 8px;
             overflow: hidden;
-            text-overflow: ellipsis;
+            flex-shrink: 0;
+        }
+        .lang-btn {
+            background: none; border: none;
+            color: var(--muted);
+            font-family: 'DM Mono', monospace;
+            font-size: 0.72rem; font-weight: 500;
+            padding: 7px 11px;
+            cursor: pointer;
+            transition: all 0.2s;
+            letter-spacing: 0.04em;
+        }
+        .lang-btn:first-child { border-right: 1px solid var(--border); }
+        .lang-btn.active { background: var(--red); color: #fff; }
+        .lang-btn:not(.active):hover { color: var(--text); background: rgba(255,255,255,0.05); }
+
+        /* ── FILTERS ── */
+        .filters {
+            padding: 16px 20px 8px;
+            display: flex; gap: 8px; flex-wrap: wrap; align-items: center;
+        }
+        .filter-label {
+            font-family: 'DM Mono', monospace; font-size: 0.7rem;
+            color: var(--muted); text-transform: uppercase;
+            letter-spacing: 0.08em; margin-right: 4px;
+        }
+        .filter-btn {
+            background: var(--bg2); border: 1px solid var(--border);
+            color: var(--muted); font-family: 'DM Sans', sans-serif;
+            font-size: 0.78rem; padding: 5px 14px; border-radius: 20px;
+            cursor: pointer; transition: all 0.2s; white-space: nowrap;
+        }
+        .filter-btn:hover { border-color: rgba(255,255,255,0.2); color: var(--text); }
+        .filter-btn.active { background: var(--red); border-color: var(--red); color: #fff; font-weight: 500; }
+
+        .stats-bar {
+            padding: 0 20px 14px;
+            font-family: 'DM Mono', monospace; font-size: 0.72rem; color: var(--muted);
+        }
+        .stats-bar span { color: var(--text); }
+
+        /* ── GRID ── */
+        .grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(140px, 1fr));
+            gap: 14px; padding: 0 20px;
+        }
+        @media (min-width: 600px) {
+            .grid { grid-template-columns: repeat(auto-fill, minmax(155px, 1fr)); }
+        }
+        @media (min-width: 1000px) {
+            .grid { grid-template-columns: repeat(auto-fill, minmax(170px, 1fr)); max-width: 1400px; margin: 0 auto; padding: 0 40px; }
+            header { padding: 14px 40px; }
+            .filters, .stats-bar { padding-left: 40px; padding-right: 40px; }
         }
 
-        .movie-card:hover .movie-info {
-            color: var(--text-main);
+        /* ── CARD ── */
+        .movie-card {
+            cursor: pointer; border-radius: var(--card-radius); overflow: hidden;
+            background: var(--bg2); border: 1px solid var(--border);
+            transition: transform 0.25s ease, box-shadow 0.25s ease, border-color 0.25s;
+            animation: fadeUp 0.3s ease both;
         }
+        .movie-card:hover { transform: translateY(-5px) scale(1.01); box-shadow: 0 16px 40px rgba(0,0,0,0.7); border-color: rgba(255,255,255,0.15); }
 
-        /* Scrollbar Personalizat */
-        ::-webkit-scrollbar { width: 8px; }
-        ::-webkit-scrollbar-track { background: #111; }
-        ::-webkit-scrollbar-thumb { background: #333; border-radius: 10px; }
-        ::-webkit-scrollbar-thumb:hover { background: var(--primary-color); }
+        .poster-wrap { position: relative; aspect-ratio: 2/3; overflow: hidden; }
+        .movie-poster { width: 100%; height: 100%; object-fit: cover; display: block; transition: transform 0.4s ease; }
+        .movie-card:hover .movie-poster { transform: scale(1.06); }
+
+        .overlay {
+            position: absolute; inset: 0;
+            background: linear-gradient(to top, rgba(0,0,0,0.85) 0%, transparent 50%);
+            opacity: 0; transition: opacity 0.25s;
+            display: flex; align-items: center; justify-content: center;
+        }
+        .movie-card:hover .overlay { opacity: 1; }
+
+        .play-btn {
+            width: 48px; height: 48px; background: rgba(232,25,44,0.9);
+            border-radius: 50%; display: flex; align-items: center; justify-content: center;
+            font-size: 1rem; color: #fff; transform: scale(0.7);
+            transition: transform 0.25s; box-shadow: 0 4px 20px rgba(232,25,44,0.5);
+        }
+        .movie-card:hover .play-btn { transform: scale(1); }
+
+        .type-badge {
+            position: absolute; top: 8px; left: 8px;
+            font-family: 'DM Mono', monospace; font-size: 0.6rem; font-weight: 500;
+            text-transform: uppercase; letter-spacing: 0.05em;
+            padding: 3px 7px; border-radius: 4px;
+            background: rgba(0,0,0,0.7); backdrop-filter: blur(4px);
+            color: var(--muted); border: 1px solid var(--border);
+        }
+        .type-badge.tv    { color: #7eb8f7; border-color: rgba(126,184,247,0.3); }
+        .type-badge.anime { color: #f07bd6; border-color: rgba(240,123,214,0.3); }
+        .type-badge.film  { color: #f0c46a; border-color: rgba(240,196,106,0.3); }
+
+        .movie-info {
+            padding: 10px 10px 11px; font-size: 0.78rem; font-weight: 500;
+            color: var(--muted); white-space: nowrap; overflow: hidden;
+            text-overflow: ellipsis; transition: color 0.2s; line-height: 1.3;
+        }
+        .movie-card:hover .movie-info { color: var(--text); }
+
+        .empty { grid-column: 1/-1; text-align: center; padding: 80px 20px; color: var(--muted); }
+        .empty i { font-size: 2.5rem; margin-bottom: 16px; display: block; opacity: 0.4; }
+        .empty p { font-size: 0.9rem; }
+        .empty strong { color: var(--text); }
+
+        ::-webkit-scrollbar { width: 6px; }
+        ::-webkit-scrollbar-track { background: var(--bg); }
+        ::-webkit-scrollbar-thumb { background: #2a2a2a; border-radius: 6px; }
+        ::-webkit-scrollbar-thumb:hover { background: var(--red); }
+
+        @keyframes fadeUp {
+            from { opacity: 0; transform: translateY(10px); }
+            to   { opacity: 1; transform: translateY(0); }
+        }
     </style>
 </head>
 <body>
-    
-    <div class="container-fluid movie-grid-container">
-        <div class="text-center logo-container">
-            <a href="index.html">
-                <img src="logo.png" alt="[darius swim]" width="200px" class="img-fluid">
-            </a>
-        </div>
 
-        <div class="row" id="movie-grid">
-            <!-- Conținutul va fi injectat aici de JavaScript -->
-        </div>
+<header>
+    <a href="index.html" class="logo-link">
+        <img src="logo.png" alt="[darius swim]">
+    </a>
+    <div class="search-wrap">
+        <i class="fas fa-search search-icon"></i>
+        <input type="search" id="search-input" autocomplete="off" spellcheck="false">
+        <button class="search-clear" id="search-clear">✕</button>
     </div>
+    <div class="lang-toggle">
+        <button class="lang-btn" data-lang="ro">RO</button>
+        <button class="lang-btn" data-lang="en">EN</button>
+    </div>
+</header>
 
-    <!-- Scripturi -->
-    <script src="filme.js"></script>
-    <script>
-        const movieGrid = document.getElementById('movie-grid');
-        
-        // Verificăm dacă datele din filme.js sunt încărcate
-        if (typeof filme !== 'undefined') {
-            filme.forEach(film => {
-                const filmHTML = `
-                    <div class="col-six">
-                        <div class="movie-card" onclick="window.location.href='play.html?id=${encodeURIComponent(film.id)}'">
-                            <div class="poster-wrapper">
-                                <img src="${film.poster}" alt="${film.titlu}" class="movie-poster" loading="lazy">
-                                <div class="card-overlay">
-                                    <i class="fas fa-play-circle play-icon"></i>
-                                </div>
-                            </div>
-                            <div class="movie-info">
-                                ${film.titlu}
-                            </div>
-                        </div>
-                    </div>
-                `;
-                movieGrid.innerHTML += filmHTML;
-            });
-        } else {
-            console.error("Eroare: variabila 'filme' nu a fost găsită. Asigură-te că filme.js este încărcat corect.");
+<div class="filters" id="filters">
+    <span class="filter-label" id="lbl-filter"></span>
+    <button class="filter-btn active" data-filter="all"   id="lbl-all"></button>
+    <button class="filter-btn"        data-filter="film"  id="lbl-film"></button>
+    <button class="filter-btn"        data-filter="tv"    id="lbl-tv"></button>
+    <button class="filter-btn"        data-filter="anime" id="lbl-anime">Anime</button>
+</div>
+
+<div class="stats-bar" id="stats-bar"></div>
+<div class="grid" id="movie-grid"></div>
+
+<script src="filme.js"></script>
+<script>
+    const STRINGS = {
+        ro: {
+            placeholder: 'Caută un film sau serial...',
+            filter_label: 'filtru:',
+            all: 'Toate', film: 'Filme', tv: 'Seriale',
+            badge_film: 'Film', badge_tv: 'Serial', badge_anime: 'Anime',
+            stats: (s,t) => s===t ? `<span>${t}</span> titluri` : `<span>${s}</span> din ${t} titluri`,
+            empty: q => `Niciun rezultat pentru <strong>"${q}"</strong>`,
+        },
+        en: {
+            placeholder: 'Search a movie or series...',
+            filter_label: 'filter:',
+            all: 'All', film: 'Movies', tv: 'Series',
+            badge_film: 'Movie', badge_tv: 'Series', badge_anime: 'Anime',
+            stats: (s,t) => s===t ? `<span>${t}</span> titles` : `<span>${s}</span> of ${t} titles`,
+            empty: q => `No results for <strong>"${q}"</strong>`,
         }
-    </script>
+    };
+
+    let lang = localStorage.getItem('ds_lang') || 'ro';
+    let query = '';
+    let activeFilter = 'all';
+
+    const ANIME_IDS = new Set([
+        "Attack on Titan", "Death Note", "Avatar: The Last Airbender"
+    ]);
+
+    function getType(film) {
+        if (ANIME_IDS.has(film.id)) return 'anime';
+        if (/embed\/tv\//.test(film.codEmbed)) return 'tv';
+        return 'film';
+    }
+
+    const grid      = document.getElementById('movie-grid');
+    const statsBar  = document.getElementById('stats-bar');
+    const searchInput = document.getElementById('search-input');
+    const searchClear = document.getElementById('search-clear');
+
+    function render() {
+        const S = STRINGS[lang];
+        const q = query.toLowerCase().trim();
+        const filtered = filme.filter(film => {
+            const matchQ = !q || film.titlu.toLowerCase().includes(q);
+            const matchF = activeFilter === 'all' || getType(film) === activeFilter;
+            return matchQ && matchF;
+        });
+
+        grid.innerHTML = '';
+
+        if (!filtered.length) {
+            grid.innerHTML = `<div class="empty"><i class="fas fa-film"></i><p>${S.empty(query)}</p></div>`;
+        } else {
+            filtered.forEach((film, i) => {
+                const type = getType(film);
+                const badge = S['badge_' + type];
+                const card = document.createElement('div');
+                card.className = 'movie-card';
+                card.style.animationDelay = `${Math.min(i * 30, 300)}ms`;
+                card.onclick = () => window.location.href = `play.html?id=${encodeURIComponent(film.id)}`;
+                card.innerHTML = `
+                    <div class="poster-wrap">
+                        <img src="${film.poster}" alt="${film.titlu}" class="movie-poster" loading="lazy">
+                        <div class="overlay"><div class="play-btn"><i class="fas fa-play"></i></div></div>
+                        <span class="type-badge ${type}">${badge}</span>
+                    </div>
+                    <div class="movie-info" title="${film.titlu}">${film.titlu}</div>`;
+                grid.appendChild(card);
+            });
+        }
+
+        statsBar.innerHTML = S.stats(filtered.length, filme.length);
+    }
+
+    function applyLang() {
+        const S = STRINGS[lang];
+        localStorage.setItem('ds_lang', lang);
+        document.documentElement.lang = lang;
+        document.querySelectorAll('.lang-btn').forEach(b => b.classList.toggle('active', b.dataset.lang === lang));
+        searchInput.placeholder = S.placeholder;
+        document.getElementById('lbl-filter').textContent = S.filter_label;
+        document.getElementById('lbl-all').textContent   = S.all;
+        document.getElementById('lbl-film').textContent  = S.film;
+        document.getElementById('lbl-tv').textContent    = S.tv;
+        render();
+    }
+
+    searchInput.addEventListener('input', () => {
+        query = searchInput.value;
+        searchClear.style.display = query ? 'block' : 'none';
+        render();
+    });
+
+    searchClear.addEventListener('click', () => {
+        searchInput.value = query = '';
+        searchClear.style.display = 'none';
+        searchInput.focus();
+        render();
+    });
+
+    document.getElementById('filters').addEventListener('click', e => {
+        const btn = e.target.closest('.filter-btn');
+        if (!btn) return;
+        document.querySelectorAll('.filter-btn').forEach(b => b.classList.remove('active'));
+        btn.classList.add('active');
+        activeFilter = btn.dataset.filter;
+        render();
+    });
+
+    document.querySelectorAll('.lang-btn').forEach(btn => {
+        btn.addEventListener('click', () => { lang = btn.dataset.lang; applyLang(); });
+    });
+
+    applyLang();
+</script>
 </body>
 </html>
