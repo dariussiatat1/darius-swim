@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="ro">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="favicon.png" type="image/x-icon">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+    <!-- Titlul initial care va fi suprascris de JavaScript -->
+    <title>Se încarcă...</title>
+    <style>
+        body {
+            background-color: #0f0f0f;
+            color: white;
+            font-family: 'Segoe UI', sans-serif;
+        }
+        .player-container {
+            width: 100%;
+            max-width: 1000px;
+            margin: 0 auto;
+            padding: 20px;
+            background: rgba(255, 255, 255, 0.05);
+            border-radius: 20px;
+            backdrop-filter: blur(10px);
+            box-shadow: 0 20px 50px rgba(0,0,0,0.5);
+        }
+        #video-player-box iframe {
+            width: 100% !important;
+            height: 550px !important;
+            border-radius: 12px;
+            border: 2px solid #333 !important;
+        }
+        .btn-back {
+            background: linear-gradient(45deg, #ff0000, #990000);
+            color: white !important;
+            border: none;
+            padding: 12px 30px;
+            border-radius: 50px;
+            font-weight: bold;
+            text-transform: uppercase;
+            transition: all 0.3s;
+            box-shadow: 0 5px 15px rgba(255, 0, 0, 0.3);
+            text-decoration: none !important;
+            display: inline-block;
+        }
+        .btn-back:hover {
+            transform: scale(1.05);
+            box-shadow: 0 8px 25px rgba(255, 0, 0, 0.5);
+            filter: brightness(1.2);
+        }
+        @media (max-width: 768px) {
+            #video-player-box iframe { height: 280px !important; }
+        }
+    </style>
+</head>
+<body>
+    <div class="container mt-4">
+        <div class="text-center mb-5">
+            <a href="index.html"><img src="logo.png" width="200px" class="img-fluid"></a>
+        </div>
+        <div class="text-center player-container">
+            <h2 id="movie-title" class="mb-4" style="font-weight: 700;">Se încarcă...</h2>
+            <div id="video-player-box" class="mb-4"></div>
+            <p style="color: #ff4d4d;"><i class="fas fa-exclamation-triangle"></i> Recomandăm folosirea unui AdBlocker!</p>
+            <div class="mt-4">
+                <a href="index.html" class="btn-back">
+                    <i class="fas fa-arrow-left"></i> Înapoi la Filme
+                </a>
+            </div>
+        </div>
+    </div>
+
+    <script src="filme.js"></script>
+    <script>
+        const urlParams = new URLSearchParams(window.location.search);
+        const movieId = urlParams.get('id');
+        const filmGasit = filme.find(f => f.id === movieId);
+
+        if (filmGasit) {
+            // Seteaza numele filmului in pagina
+            document.getElementById('movie-title').innerText = filmGasit.titlu;
+            // Seteaza numele filmului in titlul ferestrei (Tab)
+            document.title = filmGasit.titlu; 
+            // Insereaza codul video
+            document.getElementById('video-player-box').innerHTML = filmGasit.codEmbed;
+        } else {
+            document.getElementById('movie-title').innerText = "Film negăsit!";
+            document.title = "Film negăsit";
+        }
+    </script>
+</body>
+</html>
