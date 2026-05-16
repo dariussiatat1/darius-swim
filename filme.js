@@ -577,7 +577,7 @@ const filme = [
         id: "Avatar: The Last Airbender",
         titlu: "Avatar: The Last Airbender",
         tip: "serial",
-        poster: "hhttps://m.media-amazon.com/images/M/MV5BMDMwMThjYWYtY2Q2OS00OGM2LTlkODQtNDJlZTZmMjAyYmFhXkEyXkFqcGc@._V1_FMjpg_UX1000_.jpg",
+        poster: "https://m.media-amazon.com/images/M/MV5BMDMwMThjYWYtY2Q2OS00OGM2LTlkODQtNDJlZTZmMjAyYmFhXkEyXkFqcGc@._V1_FMjpg_UX1000_.jpg",
         codEmbed: '<iframe src="https://streamimdb.ru/embed/tv/tt0417299" scrolling="no" frameborder="0" allowfullscreen="true" webkitallowfullscreen="true" mozallowfullscreen="true" height="500px" width="100%"></iframe>'
     },
     {
