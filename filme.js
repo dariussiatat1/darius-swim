@@ -658,13 +658,6 @@ const filme = [
         codEmbed: '<iframe src="https://vidsrcme.ru/embed/tt0120794" scrolling="no" frameborder="0" allowfullscreen="true" webkitallowfullscreen="true" mozallowfullscreen="true" height="500px" width="100%"></iframe>'
     },
     {
-        id: "The Whale (2022)",
-        titlu: "The Whale (2022)",
-        tip: "film",
-        poster: "https://m.media-amazon.com/images/M/MV5BYmNhOWMyNTYtNTljNC00NTU3LWFiYmQtMDBhOGU5NWFhNGU5XkEyXkFqcGc@._V1_FMjpg_UX1000_.jpg",
-        codEmbed: '<video controls src="https://vod4ro.antenaplay.ro/antena1/2026/04/30/11fd1c00b90bbea32aab0593025e0497f6e3b325602b47684498fa4443fd4157_,480p-wide,720p-wide,1080p,.mp4.urlset/master.m3u8?version=1&session=ed74f5134f5323989c9e&starttime=1777816733&endtime=1777823933&source=web&guid=F5irCvmp3B3&token=WEtnGo4AKidvwII96JVcwBS2h9o=" width="80%"></video>'
-    },
-    {
         id: "The Wolf of Wall Street (2013)",
         titlu: "The Wolf of Wall Street (2013)",
         tip: "film",
