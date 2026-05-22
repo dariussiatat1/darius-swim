@@ -188,7 +188,7 @@
             background: rgba(0,0,0,0.7); backdrop-filter: blur(4px);
             color: var(--muted); border: 1px solid var(--border);
         }
-        .type-badge.tv    { color: #7eb8f7; border-color: rgba(126,184,247,0.3); }
+        .type-badge.tv, .type-badge.serial { color: #7eb8f7; border-color: rgba(126,184,247,0.3); }
         .type-badge.anime { color: #f07bd6; border-color: rgba(240,123,214,0.3); }
         .type-badge.film  { color: #f0c46a; border-color: rgba(240,196,106,0.3); }
 
@@ -236,7 +236,7 @@
     <span class="filter-label" id="lbl-filter"></span>
     <button class="filter-btn active" data-filter="all"   id="lbl-all"></button>
     <button class="filter-btn"        data-filter="film"  id="lbl-film"></button>
-    <button class="filter-btn"        data-filter="tv"    id="lbl-tv"></button>
+    <button class="filter-btn"        data-filter="serial" id="lbl-tv"></button>
     <button class="filter-btn"        data-filter="anime" id="lbl-anime">Anime</button>
 </div>
 
@@ -250,7 +250,7 @@
             placeholder: 'Caută un film sau serial...',
             filter_label: 'filtru:',
             all: 'Toate', film: 'Filme', tv: 'Seriale',
-            badge_film: 'Film', badge_tv: 'Serial', badge_anime: 'Anime',
+            badge_film: 'Film', badge_tv: 'Serial', badge_serial: 'Serial', badge_anime: 'Anime',
             stats: (s,t) => s===t ? `<span>${t}</span> titluri` : `<span>${s}</span> din ${t} titluri`,
             empty: q => `Niciun rezultat pentru <strong>"${q}"</strong>`,
         },
@@ -258,7 +258,7 @@
             placeholder: 'Search a movie or series...',
             filter_label: 'filter:',
             all: 'All', film: 'Movies', tv: 'Series',
-            badge_film: 'Movie', badge_tv: 'Series', badge_anime: 'Anime',
+            badge_film: 'Movie', badge_tv: 'Series', badge_serial: 'Series', badge_anime: 'Anime',
             stats: (s,t) => s===t ? `<span>${t}</span> titles` : `<span>${s}</span> of ${t} titles`,
             empty: q => `No results for <strong>"${q}"</strong>`,
         }
@@ -268,14 +268,8 @@
     let query = '';
     let activeFilter = 'all';
 
-    const ANIME_IDS = new Set([
-        "Attack on Titan", "Death Note", "Avatar: The Last Airbender"
-    ]);
-
     function getType(film) {
-        if (ANIME_IDS.has(film.id)) return 'anime';
-        if (/embed\/tv\//.test(film.codEmbed)) return 'tv';
-        return 'film';
+        return film.tip || 'film';
     }
 
     const grid      = document.getElementById('movie-grid');

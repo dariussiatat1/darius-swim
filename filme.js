@@ -161,6 +161,48 @@ const filme = [
         codEmbed: '<iframe src="https://vidsrcme.ru/embed/tt18259086" scrolling="no" frameborder="0" allowfullscreen="true" webkitallowfullscreen="true" mozallowfullscreen="true" height="500px" width="100%"></iframe>'
     },
     {
+        id: "Star Wars: Episode IV - A New Hope (1977)",
+        titlu: "Star Wars: Episode IV - A New Hope (1977)",
+        tip: "film",
+        poster: "https://m.media-amazon.com/images/M/MV5BOGUwMDk0Y2MtNjBlNi00NmRiLTk2MWYtMGMyMDlhYmI4ZDBjXkEyXkFqcGc@._V1_FMjpg_UX1000_.jpg",
+        codEmbed: '<iframe src="https://vidsrcme.ru/embed/tt0076759" scrolling="no" frameborder="0" allowfullscreen="true" webkitallowfullscreen="true" mozallowfullscreen="true" height="500px" width="100%"></iframe>'
+    },
+    {
+        id: "Star Wars: Episode V - The Empire Strikes Back (1980)",
+        titlu: "Star Wars: Episode V - The Empire Strikes Back (1980)",
+        tip: "film",
+        poster: "https://m.media-amazon.com/images/M/MV5BMTkxNGFlNDktZmJkNC00MDdhLTg0MTEtZjZiYWI3MGE5NWIwXkEyXkFqcGc@._V1_.jpg",
+        codEmbed: '<iframe src="https://vidsrcme.ru/embed/tt0080684" scrolling="no" frameborder="0" allowfullscreen="true" webkitallowfullscreen="true" mozallowfullscreen="true" height="500px" width="100%"></iframe>'
+    },
+    {
+        id: "Star Wars: Episode VI - Return of the Jedi (1983)",
+        titlu: "Star Wars: Episode VI - Return of the Jedi (1983)",
+        tip: "film",
+        poster: "https://m.media-amazon.com/images/M/MV5BNWEwOTI0MmUtMGNmNy00ODViLTlkZDQtZTg1YmQ3MDgyNTUzXkEyXkFqcGc@._V1_.jpg",
+        codEmbed: '<iframe src="https://vidsrcme.ru/embed/tt0086190" scrolling="no" frameborder="0" allowfullscreen="true" webkitallowfullscreen="true" mozallowfullscreen="true" height="500px" width="100%"></iframe>'
+    },
+    {
+        id: "Star Wars: Episode I - The Phantom Menace (1999)",
+        titlu: "Star Wars: Episode I - The Phantom Menace (1999)",
+        tip: "film",
+        poster: "https://m.media-amazon.com/images/M/MV5BODVhNGIxOGItYWNlMi00YTA0LWI3NTctZmQxZGUwZDEyZWI4XkEyXkFqcGc@._V1_FMjpg_UX1000_.jpg",
+        codEmbed: '<iframe src="https://vidsrcme.ru/embed/tt0120915" scrolling="no" frameborder="0" allowfullscreen="true" webkitallowfullscreen="true" mozallowfullscreen="true" height="500px" width="100%"></iframe>'
+    },
+    {
+        id: "Star Wars: Episode II - Attack of the Clones (2002)",
+        titlu: "Star Wars: Episode II - Attack of the Clones (2002)",
+        tip: "film",
+        poster: "https://m.media-amazon.com/images/M/MV5BNTgxMjY2YzUtZmVmNC00YjAwLWJlODMtNDBhNzllNzIzMjgxXkEyXkFqcGc@._V1_.jpg",
+        codEmbed: '<iframe src="https://vidsrcme.ru/embed/tt0121765" scrolling="no" frameborder="0" allowfullscreen="true" webkitallowfullscreen="true" mozallowfullscreen="true" height="500px" width="100%"></iframe>'
+    },
+    {
+        id: "Star Wars: Episode III - Revenge of the Sith (2005)",
+        titlu: "Star Wars: Episode III - Revenge of the Sith (2005)",
+        tip: "film",
+        poster: "https://m.media-amazon.com/images/M/MV5BNTc4MTc3NTQ5OF5BMl5BanBnXkFtZTcwOTg0NjI4NA@@._V1_.jpg",
+        codEmbed: '<iframe src="https://vidsrcme.ru/embed/tt0121766" scrolling="no" frameborder="0" allowfullscreen="true" webkitallowfullscreen="true" mozallowfullscreen="true" height="500px" width="100%"></iframe>'
+    },
+    {
         id: "Sirenele: Secretul medalionului (2025)",
         titlu: "Sirenele: Secretul medalionului (2025)",
         tip: "film",
@@ -266,11 +308,81 @@ const filme = [
         codEmbed: '<iframe src="https://vidsrcme.ru/embed/tt0137523" scrolling="no" frameborder="0" allowfullscreen="true" webkitallowfullscreen="true" mozallowfullscreen="true" height="500px" width="100%"></iframe>'
     },
     {
+        id: "F1: The Movie (2025)",
+        titlu: "F1: The Movie (2025))",
+        tip: "film",
+        poster: "https://m.media-amazon.com/images/M/MV5BNGI0MDI4NjEtOWU3ZS00ODQyLWFhYTgtNGYxM2ZkM2Q2YjE3XkEyXkFqcGc@._V1_FMjpg_UX1000_.jpg",
+        codEmbed: '<iframe src="https://vidsrcme.ru/embed/tt16311594" scrolling="no" frameborder="0" allowfullscreen="true" webkitallowfullscreen="true" mozallowfullscreen="true" height="500px" width="100%"></iframe>'
+    },
+    {
+        id: "The Fast and the Furious (2001)",
+        titlu: "The Fast and the Furious (2001)",
+        tip: "film",
+        poster: "https://m.media-amazon.com/images/M/MV5BZGRiMDE1NTMtMThmZS00YjE4LWI1ODQtNjRkZGZlOTg2MGE1XkEyXkFqcGc@._V1_.jpg",
+        codEmbed: '<iframe src="https://vidsrcme.ru/embed/tt0232500" scrolling="no" frameborder="0" allowfullscreen="true" webkitallowfullscreen="true" mozallowfullscreen="true" height="500px" width="100%"></iframe>'
+    },
+    {
+        id: "2 Fast 2 Furious (2003)",
+        titlu: "2 Fast 2 Furious (2003)",
+        tip: "film",
+        poster: "https://m.media-amazon.com/images/M/MV5BOTQzYzEwNWMtOTAwYy00YWYwLWE1NTEtZTkxOGQxZTM0M2VhXkEyXkFqcGc@._V1_FMjpg_UX1000_.jpg",
+        codEmbed: '<iframe src="https://vidsrcme.ru/embed/tt0322259" scrolling="no" frameborder="0" allowfullscreen="true" webkitallowfullscreen="true" mozallowfullscreen="true" height="500px" width="100%"></iframe>'
+    },
+    {
         id: "Fast and Furious: Tokyo Drift (2006)",
         titlu: "Fast and Furious: Tokyo Drift (2006)",
         tip: "film",
         poster: "https://m.media-amazon.com/images/M/MV5BMTQ2NTMxODEyNV5BMl5BanBnXkFtZTcwMDgxMjA0MQ@@._V1_.jpg",
         codEmbed: '<iframe src="https://vidsrcme.ru/embed/tt0463985" scrolling="no" frameborder="0" allowfullscreen="true" webkitallowfullscreen="true" mozallowfullscreen="true" height="500px" width="100%"></iframe>'
+    },
+    {
+        id: "Fast & Furious 4 (2009)",
+        titlu: "Fast & Furious 4 (2009)",
+        tip: "film",
+        poster: "https://m.media-amazon.com/images/M/MV5BOGU0MjZjMmQtOWZlMi00N2NiLTk4ZTUtYTJhZTlhNDQxZjJhXkEyXkFqcGc@._V1_FMjpg_UX1000_.jpg",
+        codEmbed: '<iframe src="https://vidsrcme.ru/embed/tt1013752" scrolling="no" frameborder="0" allowfullscreen="true" webkitallowfullscreen="true" mozallowfullscreen="true" height="500px" width="100%"></iframe>'
+    },
+    {
+        id: "Fast Five (2011)",
+        titlu: "Fast Five (2011)",
+        tip: "film",
+        poster: "https://m.media-amazon.com/images/M/MV5BMTUxNTk5MTE0OF5BMl5BanBnXkFtZTcwMjA2NzY3NA@@._V1_FMjpg_UX1000_.jpg",
+        codEmbed: '<iframe src="https://vidsrcme.ru/embed/tt1596343" scrolling="no" frameborder="0" allowfullscreen="true" webkitallowfullscreen="true" mozallowfullscreen="true" height="500px" width="100%"></iframe>'
+    },
+    {
+        id: "Fast & Furious 6 (2013)",
+        titlu: "Fast & Furious 6 (2013)",
+        tip: "film",
+        poster: "https://m.media-amazon.com/images/M/MV5BMTM3NTg2NDQzOF5BMl5BanBnXkFtZTcwNjc2NzQzOQ@@._V1_FMjpg_UX1000_.jpg",
+        codEmbed: '<iframe src="https://vidsrcme.ru/embed/tt1905041" scrolling="no" frameborder="0" allowfullscreen="true" webkitallowfullscreen="true" mozallowfullscreen="true" height="500px" width="100%"></iframe>'
+    },
+    {
+        id: "Furious 7 (2015)",
+        titlu: "Furious 7 (2015)",
+        tip: "film",
+        poster: "https://m.media-amazon.com/images/M/MV5BMTQxOTA2NDUzOV5BMl5BanBnXkFtZTgwNzY2MTMxMzE@._V1_.jpg",
+        codEmbed: '<iframe src="https://vidsrcme.ru/embed/tt0232500" scrolling="no" frameborder="0" allowfullscreen="true" webkitallowfullscreen="true" mozallowfullscreen="true" height="500px" width="100%"></iframe>'
+    },
+    {
+        id: "The Fate of the Furious (2017)",
+        titlu: "The Fate of the Furious (2017)",
+        tip: "film",
+        poster: "https://m.media-amazon.com/images/M/MV5BMjMxODI2NDM5Nl5BMl5BanBnXkFtZTgwNjgzOTk1MTI@._V1_.jpg",
+        codEmbed: '<iframe src="https://vidsrcme.ru/embed/tt4630562" scrolling="no" frameborder="0" allowfullscreen="true" webkitallowfullscreen="true" mozallowfullscreen="true" height="500px" width="100%"></iframe>'
+    },
+    {
+        id: "F9: The Fast Saga (2021)",
+        titlu: "F9: The Fast Saga (2021)",
+        tip: "film",
+        poster: "https://m.media-amazon.com/images/M/MV5BODJkMTQ5ZmQtNzQxYy00ZWNlLWI0ZGYtYjU1NzdiMjcyNDRmXkEyXkFqcGc@._V1_.jpg",
+        codEmbed: '<iframe src="https://vidsrcme.ru/embed/tt5433138" scrolling="no" frameborder="0" allowfullscreen="true" webkitallowfullscreen="true" mozallowfullscreen="true" height="500px" width="100%"></iframe>'
+    },
+    {
+        id: "Fast X (2023)",
+        titlu: "Fast X (2023)",
+        tip: "film",
+        poster: "https://m.media-amazon.com/images/M/MV5BYzEwZjczOTktYzU1OS00YjJlLTgyY2UtNWEzODBlN2RjZDEwXkEyXkFqcGc@._V1_FMjpg_UX1000_.jpg",
+        codEmbed: '<iframe src="https://vidsrcme.ru/embed/tt5433140" scrolling="no" frameborder="0" allowfullscreen="true" webkitallowfullscreen="true" mozallowfullscreen="true" height="500px" width="100%"></iframe>'
     },
     {
         id: "Forrest Gump (1994)",
@@ -348,6 +460,13 @@ const filme = [
         tip: "film",
         poster: "https://m.media-amazon.com/images/M/MV5BNzllNmRlN2EtMDQyOC00ODJjLTg4OWQtZDNmNGU3YzlkNjc1XkEyXkFqcGc@._V1_FMjpg_UX1000_.jpg",
         codEmbed: '<iframe src="https://vidsrcme.ru/embed/tt11378946" scrolling="no" frameborder="0" allowfullscreen="true" webkitallowfullscreen="true" mozallowfullscreen="true" height="500px" width="100%"></iframe>'
+    },
+    {
+        id: "Oppenheimer (2023)",
+        titlu: "Oppenheimer (2023)",
+        tip: "film",
+        poster: "https://m.media-amazon.com/images/M/MV5BN2JkMDc5MGQtZjg3YS00NmFiLWIyZmQtZTJmNTM5MjVmYTQ4XkEyXkFqcGc@._V1_.jpg",
+        codEmbed: '<iframe src="https://vidsrcme.ru/embed/tt15398776" scrolling="no" frameborder="0" allowfullscreen="true" webkitallowfullscreen="true" mozallowfullscreen="true" height="500px" width="100%"></iframe>'
     },
     {
         id: "Parasite (2019)",
@@ -439,7 +558,7 @@ const filme = [
         tip: "film",
         poster: "https://m.media-amazon.com/images/M/MV5BMzU5MmVkODQtZWM5ZC00MjRiLWIwOTMtN2ViZGM5MjU5Nzc1XkEyXkFqcGc@._V1_FMjpg_UX1000_.jpg",
         codEmbed: '<iframe src="https://vidsrcme.ru/embed/tt7599146" scrolling="no" frameborder="0" allowfullscreen="true" webkitallowfullscreen="true" mozallowfullscreen="true" height="500px" width="100%"></iframe>'
-    },
+    }, 
     {
         id: "Troy (2004)",
         titlu: "Troy (2004)",
@@ -599,62 +718,62 @@ const filme = [
         titlu: "Breaking Bad",
         tip: "serial",
         poster: "https://m.media-amazon.com/images/M/MV5BMzU5ZGYzNmQtMTdhYy00OGRiLTg0NmQtYjVjNzliZTg1ZGE4XkEyXkFqcGc@._V1_.jpg",
-        codEmbed: '<iframe src="https://streamimdb.ru/embed/tv/tt0903747" scrolling="no" frameborder="0" allowfullscreen="true" webkitallowfullscreen="true" mozallowfullscreen="true" height="500px" width="100%"></iframe>'
+        codEmbed: '<iframe src="https://vidsrcme.ru/embed/tt0903747" scrolling="no" frameborder="0" allowfullscreen="true" webkitallowfullscreen="true" mozallowfullscreen="true" height="500px" width="100%"></iframe>'
     },
     {
         id: "The Boys (2019)",
         titlu: "The Boys (2019)",
         tip: "serial",
         poster: "https://resizing.flixster.com/StibykxxpJER6U_N50JYuXDpneA=/ems.cHJkLWVtcy1hc3NldHMvdHZzZXJpZXMvZTVjMzZkMzktN2Y4ZS00MjZjLTgyMTMtMzhhOWI1OTBiYzA3LmpwZw==",
-        codEmbed: '<iframe src="https://streamimdb.ru/embed/tv/tt1190634" scrolling="no" frameborder="0" allowfullscreen="true" webkitallowfullscreen="true" mozallowfullscreen="true" height="500px" width="100%"></iframe>'
+        codEmbed: '<iframe src="https://vidsrcme.ru/embed/tt1190634" scrolling="no" frameborder="0" allowfullscreen="true" webkitallowfullscreen="true" mozallowfullscreen="true" height="500px" width="100%"></iframe>'
     },
     {
         id: "Dexter",
         titlu: "Dexter",
         tip: "serial",
         poster: "https://m.media-amazon.com/images/M/MV5BNWYyYTk0MDEtMjU3OS00MzIyLTkxMGItNzc3NDdlNjAyM2U2XkEyXkFqcGc@._V1_.jpg",
-        codEmbed: '<iframe src="https://streamimdb.ru/embed/tv/tt0773262" scrolling="no" frameborder="0" allowfullscreen="true" webkitallowfullscreen="true" mozallowfullscreen="true" height="500px" width="100%"></iframe>'
+        codEmbed: '<iframe src="https://vidsrcme.ru/embed/tt0773262" scrolling="no" frameborder="0" allowfullscreen="true" webkitallowfullscreen="true" mozallowfullscreen="true" height="500px" width="100%"></iframe>'
     },
     {
         id: "Avatar: The Last Airbender",
         titlu: "Avatar: The Last Airbender",
         tip: "serial",
         poster: "https://m.media-amazon.com/images/M/MV5BMDMwMThjYWYtY2Q2OS00OGM2LTlkODQtNDJlZTZmMjAyYmFhXkEyXkFqcGc@._V1_FMjpg_UX1000_.jpg",
-        codEmbed: '<iframe src="https://streamimdb.ru/embed/tv/tt0417299" scrolling="no" frameborder="0" allowfullscreen="true" webkitallowfullscreen="true" mozallowfullscreen="true" height="500px" width="100%"></iframe>'
+        codEmbed: '<iframe src="https://vidsrcme.ru/embed/tt0417299" scrolling="no" frameborder="0" allowfullscreen="true" webkitallowfullscreen="true" mozallowfullscreen="true" height="500px" width="100%"></iframe>'
     },
     {
         id: "Attack on Titan",
         titlu: "Attack on Titan",
         tip: "anime",
         poster: "https://m.media-amazon.com/images/M/MV5BZjliODY5MzQtMmViZC00MTZmLWFhMWMtMjMwM2I3OGY1MTRiXkEyXkFqcGc@._V1_FMjpg_UX1000_.jpg",
-        codEmbed: '<iframe src="https://streamimdb.ru/embed/tv/tt2560140" scrolling="no" frameborder="0" allowfullscreen="true" webkitallowfullscreen="true" mozallowfullscreen="true" height="500px" width="100%"></iframe>'
+        codEmbed: '<iframe src="https://vidsrcme.ru/embed/tt2560140" scrolling="no" frameborder="0" allowfullscreen="true" webkitallowfullscreen="true" mozallowfullscreen="true" height="500px" width="100%"></iframe>'
     },
     {
         id: "Death Note",
         titlu: "Death Note",
         tip: "anime",
         poster: "https://m.media-amazon.com/images/M/MV5BYTgyZDhmMTEtZDFhNi00MTc4LTg3NjUtYWJlNGE5Mzk2NzMxXkEyXkFqcGc@._V1_FMjpg_UX1000_.jpg",
-        codEmbed: '<iframe src="https://streamimdb.ru/embed/tv/tt0877057" scrolling="no" frameborder="0" allowfullscreen="true" webkitallowfullscreen="true" mozallowfullscreen="true" height="500px" width="100%"></iframe>'
+        codEmbed: '<iframe src="https://vidsrcme.ru/embed/tt0877057" scrolling="no" frameborder="0" allowfullscreen="true" webkitallowfullscreen="true" mozallowfullscreen="true" height="500px" width="100%"></iframe>'
     },
     {
         id: "Rick and Morty",
         titlu: "Rick and Morty",
         tip: "serial",
         poster: "https://m.media-amazon.com/images/M/MV5BZGQyZjk2MzMtMTcyNC00NGU3LTlmNjItNDExMWM4ZDFhYmQ2XkEyXkFqcGc@._V1_.jpg",
-        codEmbed: '<iframe src="https://streamimdb.ru/embed/tv/tt2861424" scrolling="no" frameborder="0" allowfullscreen="true" webkitallowfullscreen="true" mozallowfullscreen="true" height="500px" width="100%"></iframe>'
+        codEmbed: '<iframe src="https://vidsrcme.ru/embed/tt2861424" scrolling="no" frameborder="0" allowfullscreen="true" webkitallowfullscreen="true" mozallowfullscreen="true" height="500px" width="100%"></iframe>'
     },
     {
         id: "Family Guy",
         titlu: "Family Guy",
         tip: "serial",
         poster: "https://m.media-amazon.com/images/M/MV5BNTZlMGQ1YjEtMzVlNC00ZmMxLTk0MzgtZjdkYTU1NmUxNTQ0XkEyXkFqcGc@._V1_.jpg",
-        codEmbed: '<iframe src="https://streamimdb.ru/embed/tv/tt0182576" scrolling="no" frameborder="0" allowfullscreen="true" webkitallowfullscreen="true" mozallowfullscreen="true" height="500px" width="100%"></iframe>'
+        codEmbed: '<iframe src="https://vidsrcme.ru/embed/tt0182576" scrolling="no" frameborder="0" allowfullscreen="true" webkitallowfullscreen="true" mozallowfullscreen="true" height="500px" width="100%"></iframe>'
     },
     {
         id: "Bluey",
         titlu: "Bluey",
         tip: "serial",
         poster: "https://m.media-amazon.com/images/M/MV5BYWU1YmQzMjEtMDNjOS00MGIyLWExY2ItZDAzNmU5NWViMGZmXkEyXkFqcGc@._V1_FMjpg_UX1000_.jpg",
-        codEmbed: '<iframe src="https://streamimdb.ru/embed/tv/tt7678620" scrolling="no" frameborder="0" allowfullscreen="true" webkitallowfullscreen="true" mozallowfullscreen="true" height="500px" width="100%"></iframe>'
+        codEmbed: '<iframe src="https://vidsrcme.ru/embed/tt7678620" scrolling="no" frameborder="0" allowfullscreen="true" webkitallowfullscreen="true" mozallowfullscreen="true" height="500px" width="100%"></iframe>'
     }
 ];
