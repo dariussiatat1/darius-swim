@@ -1,5 +1,5 @@
 # [darius swim]
-## Passion driven free media streaming service
+## Passion driven free streaming service
 
 [darius swim] is home to currently **111** movies and tv series with many more to be added.
 
