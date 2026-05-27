@@ -462,6 +462,13 @@ const filme = [
         codEmbed: '<video controls src="https://sod1.antenaplay.ro/antena1/2026/03/25/9d5d0ecec89c7df3c0a5ae7750d7afed39bf2f4dc10e0aa2593523b24fb86fcb_,480p-wide,720p-wide,1080p,.mp4.urlset/master.m3u8?version=1&session=6af6c42226e3a919c53c&starttime=1777817093&endtime=1777824293&source=web&guid=qITzS6RL7fX&token=caEcRxP6P_jIAdfvKwMC5ZfyG-I=" width="80%"></video>'
     },
     {
+        id: "The Lego Batman Movie (2017)",
+        titlu: "The Lego Batman Movie (2017)",
+        tip: "film",
+        poster: "https://m.media-amazon.com/images/M/MV5BMTcyNTEyOTY0M15BMl5BanBnXkFtZTgwOTAyNzU3MDI@._V1_FMjpg_UX1000_.jpg",
+        codEmbed: '<iframe src="https://vidsrcme.ru/embed/tt4116284" scrolling="no" frameborder="0" allowfullscreen="true" webkitallowfullscreen="true" mozallowfullscreen="true" height="500px" width="100%"></iframe>'
+    },
+    {
         id: "Michael (2026)",
         titlu: "Michael (2026)",
         tip: "film",
