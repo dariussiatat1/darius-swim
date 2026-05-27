@@ -1,5 +1,12 @@
 const filme = [
     {
+        id: "Baieti de oras: Golden Boyz (2026)",
+        titlu: "Baieti de oras: Golden Boyz (2026)",
+        tip: "film",
+        poster: "https://m.media-amazon.com/images/M/MV5BOGRiY2M2MzUtZTg3My00MDY0LWIxMWYtYzVmZmJkZjgxNWEwXkEyXkFqcGc@._V1_FMjpg_UX1000_.jpg",
+        codEmbed: '<iframe src="https://vidsrcme.ru/embed/tt39195606" scrolling="no" frameborder="0" allowfullscreen="true" webkitallowfullscreen="true" mozallowfullscreen="true" height="500px" width="100%"></iframe>'
+    },
+    {
         id: "Avatar (2009)",
         titlu: "Avatar (2009)",
         tip: "film",
