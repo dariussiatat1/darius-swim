@@ -1,12 +1,5 @@
 const filme = [
     {
-        id: "Baieti de oras: Golden Boyz (2026)",
-        titlu: "Baieti de oras: Golden Boyz (2026)",
-        tip: "film",
-        poster: "https://m.media-amazon.com/images/M/MV5BOGRiY2M2MzUtZTg3My00MDY0LWIxMWYtYzVmZmJkZjgxNWEwXkEyXkFqcGc@._V1_FMjpg_UX1000_.jpg",
-        codEmbed: '<iframe src="https://vidsrcme.ru/embed/tt39195606" scrolling="no" frameborder="0" allowfullscreen="true" webkitallowfullscreen="true" mozallowfullscreen="true" height="500px" width="100%"></iframe>'
-    },
-    {
         id: "Avatar (2009)",
         titlu: "Avatar (2009)",
         tip: "film",
@@ -131,6 +124,41 @@ const filme = [
         tip: "film",
         poster: "https://m.media-amazon.com/images/M/MV5BZmQ3NmIxNTgtYjFiNS00NzliLWI0YzAtZDkxY2E0YWIxZDEwXkEyXkFqcGc@._V1_.jpg",
         codEmbed: '<iframe src="https://vidsrcme.ru/embed/tt30274401" scrolling="no" frameborder="0" allowfullscreen="true" webkitallowfullscreen="true" mozallowfullscreen="true" height="500px" width="100%"></iframe>'
+    },
+    {
+        id: "Casino Royale (2006)",
+        titlu: "Casino Royale (2006)",
+        tip: "film",
+        poster: "https://m.media-amazon.com/images/M/MV5BMWQ1ZDM4NDktMWY0NC00MjcxLWJlMDMtNmE2MGVhYzRjMWQ0XkEyXkFqcGc@._V1_FMjpg_UX1000_.jpg",
+        codEmbed: '<iframe src="https://vidsrcme.ru/embed/tt0381061" scrolling="no" frameborder="0" allowfullscreen="true" webkitallowfullscreen="true" mozallowfullscreen="true" height="500px" width="100%"></iframe>'
+    },
+    {
+        id: "Quantum of Solace (2008)",
+        titlu: "Quantum of Solace (2008)",
+        tip: "film",
+        poster: "https://m.media-amazon.com/images/M/MV5BYmMwZTA3MTAtNWU0Yy00NGZmLTg0YmItZTVkZGFjZTI1ZWJiXkEyXkFqcGc@._V1_.jpg",
+        codEmbed: '<iframe src="https://vidsrcme.ru/embed/tt0830515" scrolling="no" frameborder="0" allowfullscreen="true" webkitallowfullscreen="true" mozallowfullscreen="true" height="500px" width="100%"></iframe>'
+    },
+    {
+        id: "Skyfall (2012)",
+        titlu: "Skyfall (2012)",
+        tip: "film",
+        poster: "https://m.media-amazon.com/images/M/MV5BNjAzMWNkODUtM2FlMi00NzgyLWJhMGUtMWEyNDYyZGFiN2RlXkEyXkFqcGc@._V1_FMjpg_UX1000_.jpg",
+        codEmbed: '<iframe src="https://vidsrcme.ru/embed/tt1074638" scrolling="no" frameborder="0" allowfullscreen="true" webkitallowfullscreen="true" mozallowfullscreen="true" height="500px" width="100%"></iframe>'
+    },
+    {
+        id: "Spectre (2015)",
+        titlu: "Spectre (2015)",
+        tip: "film",
+        poster: "https://m.media-amazon.com/images/M/MV5BMzA5MzFiNDAtYTI0NC00MDE5LTljYTctYTNkODk1OTZlODI5XkEyXkFqcGc@._V1_FMjpg_UX1000_.jpg",
+        codEmbed: '<iframe src="https://vidsrcme.ru/embed/tt2379713" scrolling="no" frameborder="0" allowfullscreen="true" webkitallowfullscreen="true" mozallowfullscreen="true" height="500px" width="100%"></iframe>'
+    },
+    {
+        id: "No Time to Die (2021)",
+        titlu: "No Time to Die (2021)",
+        tip: "film",
+        poster: "https://m.media-amazon.com/images/M/MV5BZGZiOGZhZDQtZmRkNy00ZmUzLTliMGEtZGU0NjExOGMxZDVkXkEyXkFqcGc@._V1_.jpg",
+        codEmbed: '<iframe src="https://vidsrcme.ru/embed/tt2382320" scrolling="no" frameborder="0" allowfullscreen="true" webkitallowfullscreen="true" mozallowfullscreen="true" height="500px" width="100%"></iframe>'
     },
     {
         id: "The Super Mario Bros. Movie (2023)",
@@ -280,6 +308,13 @@ const filme = [
         codEmbed: '<iframe src="https://vidsrcme.ru/embed/tt6139732" scrolling="no" frameborder="0" allowfullscreen="true" webkitallowfullscreen="true" mozallowfullscreen="true" height="500px" width="100%"></iframe>'
     },
     {
+        id: "Baieti de oras: Golden Boyz (2026)",
+        titlu: "Baieti de oras: Golden Boyz (2026)",
+        tip: "film",
+        poster: "https://m.media-amazon.com/images/M/MV5BOGRiY2M2MzUtZTg3My00MDY0LWIxMWYtYzVmZmJkZjgxNWEwXkEyXkFqcGc@._V1_FMjpg_UX1000_.jpg",
+        codEmbed: '<iframe src="https://vidsrcme.ru/embed/tt39195606" scrolling="no" frameborder="0" allowfullscreen="true" webkitallowfullscreen="true" mozallowfullscreen="true" height="500px" width="100%"></iframe>'
+    },
+    {
         id: "Bullet Train (2022)",
         titlu: "Bullet Train (2022)",
         tip: "film",
@@ -292,6 +327,13 @@ const filme = [
         tip: "film",
         poster: "https://m.media-amazon.com/images/M/MV5BNzA1Njg4NzYxOV5BMl5BanBnXkFtZTgwODk5NjU3MzI@._V1_.jpg",
         codEmbed: '<iframe src="https://vidsrcme.ru/embed/tt1856101" scrolling="no" frameborder="0" allowfullscreen="true" webkitallowfullscreen="true" mozallowfullscreen="true" height="500px" width="100%"></iframe>'
+    },
+    {
+        id: "Blade Runner (1982)",
+        titlu: "Blade Runner (1982)",
+        tip: "film",
+        poster: "https://m.media-amazon.com/images/M/MV5BOWQ4YTBmNTQtMDYxMC00NGFjLTkwOGQtNzdhNmY1Nzc1MzUxXkEyXkFqcGc@._V1_FMjpg_UX1000_.jpg",
+        codEmbed: '<iframe src="https://vidsrcme.ru/embed/tt0083658" scrolling="no" frameborder="0" allowfullscreen="true" webkitallowfullscreen="true" mozallowfullscreen="true" height="500px" width="100%"></iframe>'
     },
     {
         id: "Catch Me If You Can (2002)",
@@ -316,7 +358,7 @@ const filme = [
     },
     {
         id: "F1: The Movie (2025)",
-        titlu: "F1: The Movie (2025))",
+        titlu: "F1: The Movie (2025)",
         tip: "film",
         poster: "https://m.media-amazon.com/images/M/MV5BNGI0MDI4NjEtOWU3ZS00ODQyLWFhYTgtNGYxM2ZkM2Q2YjE3XkEyXkFqcGc@._V1_FMjpg_UX1000_.jpg",
         codEmbed: '<iframe src="https://vidsrcme.ru/embed/tt16311594" scrolling="no" frameborder="0" allowfullscreen="true" webkitallowfullscreen="true" mozallowfullscreen="true" height="500px" width="100%"></iframe>'
@@ -446,6 +488,20 @@ const filme = [
         tip: "film",
         poster: "https://m.media-amazon.com/images/M/MV5BZDU5ZTRkYmItZjg0Mi00ZTQwLThjMWItNWM3MTMxMzVjZmVjXkEyXkFqcGc@._V1_.jpg",
         codEmbed: ' <video controls src="https://sod1.antenaplay.ro/antena1/2025/10/17/f96d69b7e159f09916f55cadc69d6220c859e1a8b8c8b8905df56a562036db11_,480p-wide,720p-wide,1080p,.mp4.urlset/master.m3u8?version=1&session=f5318acd40b4df16512f&starttime=1771278974&endtime=1771286174&source=web&guid=2kbfb4UrtDB&token=HRYK2KCtLSRjMpIz6wKjVbuUP0U=" width="80%"></video>'
+    },
+    {
+        id: "Glass Onion (2022)",
+        titlu: "Glass Onion (2022)",
+        tip: "film",
+        poster: "https://m.media-amazon.com/images/M/MV5BMzI2ZDYxZTEtMzVlOC00OTUyLTgyNTAtYWFhNmRhZjAzZWE1XkEyXkFqcGc@._V1_FMjpg_UX1000_.jpg",
+        codEmbed: '<iframe src="https://vidsrcme.ru/embed/tt11564570" scrolling="no" frameborder="0" allowfullscreen="true" webkitallowfullscreen="true" mozallowfullscreen="true" height="500px" width="100%"></iframe>'
+    },
+    {
+        id: "Wake Up Dead Man (2025)",
+        titlu: "Wake Up Dead Man (2025)",
+        tip: "film",
+        poster: "https://m.media-amazon.com/images/M/MV5BNzcxNjQxYWEtZTRlMy00ZDFmLTk1MGMtZGYwZjUxNjMzM2M2XkEyXkFqcGc@._V1_.jpg",
+        codEmbed: '<iframe src="https://vidsrcme.ru/embed/tt14364480" scrolling="no" frameborder="0" allowfullscreen="true" webkitallowfullscreen="true" mozallowfullscreen="true" height="500px" width="100%"></iframe>'
     },
     {
         id: "Kung Pow: Enter the Fist (2002)",
