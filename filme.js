@@ -322,6 +322,13 @@ const filme = [
         codEmbed: '<iframe src="https://vidsrcme.ru/embed/tt12593682" scrolling="no" frameborder="0" allowfullscreen="true" webkitallowfullscreen="true" mozallowfullscreen="true" height="500px" width="100%"></iframe>'
     },
     {
+        id: "Borat (2006)",
+        titlu: "Borat (2006)",
+        tip: "film",
+        poster: "https://m.media-amazon.com/images/M/MV5BMTk0MTQ3NDQ4Ml5BMl5BanBnXkFtZTcwOTQ3OTQzMw@@._V1_FMjpg_UX1000_.jpg",
+        codEmbed: '<iframe src="https://vidsrcme.ru/embed/tt0443453" scrolling="no" frameborder="0" allowfullscreen="true" webkitallowfullscreen="true" mozallowfullscreen="true" height="500px" width="100%"></iframe>'
+    },
+    {
         id: "Blade Runner 2049 (2017)",
         titlu: "Blade Runner 2049 (2017)",
         tip: "film",
@@ -348,6 +355,34 @@ const filme = [
         tip: "film",
         poster: "https://m.media-amazon.com/images/M/MV5BMDYwNGVlY2ItMWYxMS00YjZiLWE5MTAtYWM5NWQ2ZWJjY2Q3XkEyXkFqcGc@._V1_.jpg",
         codEmbed: '<iframe src="https://vidsrcme.ru/embed/tt0097165" scrolling="no" frameborder="0" allowfullscreen="true" webkitallowfullscreen="true" mozallowfullscreen="true" height="500px" width="100%"></iframe>'
+    },
+    {
+        id: "Despicable Me (2010)",
+        titlu: "Despicable Me (2010)",
+        tip: "film",
+        poster: "https://m.media-amazon.com/images/M/MV5BMTY3NjY0MTQ0Nl5BMl5BanBnXkFtZTcwMzQ2MTc0Mw@@._V1_FMjpg_UX1000_.jpg",
+        codEmbed: '<iframe src="https://vidsrcme.ru/embed/tt1323594" scrolling="no" frameborder="0" allowfullscreen="true" webkitallowfullscreen="true" mozallowfullscreen="true" height="500px" width="100%"></iframe>'
+    },
+    {
+        id: "Despicable Me 2 (2013)",
+        titlu: "Despicable Me 2 (2013)",
+        tip: "film",
+        poster: "https://m.media-amazon.com/images/M/MV5BMTQxNzY1MjI5NF5BMl5BanBnXkFtZTcwNTI0MDY1OQ@@._V1_.jpg",
+        codEmbed: '<iframe src="https://vidsrcme.ru/embed/tt1690953" scrolling="no" frameborder="0" allowfullscreen="true" webkitallowfullscreen="true" mozallowfullscreen="true" height="500px" width="100%"></iframe>'
+    },
+    {
+        id: "Despicable Me 3 (2017)",
+        titlu: "Despicable Me 3 (2017)",
+        tip: "film",
+        poster: "https://m.media-amazon.com/images/M/MV5BNjUyNzQ2MTg3Ml5BMl5BanBnXkFtZTgwNzE4NDM3MTI@._V1_FMjpg_UX1000_.jpg",
+        codEmbed: '<iframe src="https://vidsrcme.ru/embed/tt3469046" scrolling="no" frameborder="0" allowfullscreen="true" webkitallowfullscreen="true" mozallowfullscreen="true" height="500px" width="100%"></iframe>'
+    },
+    {
+        id: "Despicable Me 4 (2024)",
+        titlu: "Despicable Me 4 (2024)",
+        tip: "film",
+        poster: "https://m.media-amazon.com/images/M/MV5BNzY0ZTlhYzgtOTgzZC00ZTg2LTk4NTEtZDllM2E2NGE5Njg2XkEyXkFqcGc@._V1_.jpg",
+        codEmbed: '<iframe src="https://vidsrcme.ru/embed/tt7510222" scrolling="no" frameborder="0" allowfullscreen="true" webkitallowfullscreen="true" mozallowfullscreen="true" height="500px" width="100%"></iframe>'
     },
     {
         id: "Fight Club (1999)",
@@ -532,6 +567,13 @@ const filme = [
         codEmbed: '<iframe src="https://vidsrcme.ru/embed/tt11378946" scrolling="no" frameborder="0" allowfullscreen="true" webkitallowfullscreen="true" mozallowfullscreen="true" height="500px" width="100%"></iframe>'
     },
     {
+        id: "Men in Black (1997)",
+        titlu: "Men in Black (1997) ",
+        tip: "film",
+        poster: "https://m.media-amazon.com/images/M/MV5BZmQ0YTdhYzEtMjIxZC00MGFiLTlmNjktZmFlOWE2M2QxOTRhXkEyXkFqcGc@._V1_.jpg",
+        codEmbed: '<iframe src="https://vidsrcme.ru/embed/tt0119654" scrolling="no" frameborder="0" allowfullscreen="true" webkitallowfullscreen="true" mozallowfullscreen="true" height="500px" width="100%"></iframe>'
+    },
+    {
         id: "Oppenheimer (2023)",
         titlu: "Oppenheimer (2023)",
         tip: "film",
@@ -635,6 +677,20 @@ const filme = [
         tip: "film",
         poster: "https://m.media-amazon.com/images/M/MV5BMTk5MzU1MDMwMF5BMl5BanBnXkFtZTcwNjczODMzMw@@._V1_.jpg",
         codEmbed: '<iframe src="https://vidsrcme.ru/embed/tt0332452" scrolling="no" frameborder="0" allowfullscreen="true" webkitallowfullscreen="true" mozallowfullscreen="true" height="500px" width="100%"></iframe>'
+    },
+    {
+        id: "The Truman Show (1998)",
+        titlu: "The Truman Show (1998)",
+        tip: "film",
+        poster: "https://m.media-amazon.com/images/M/MV5BNzA3ZjZlNzYtMTdjMy00NjMzLTk5ZGYtMTkyYzNiOGM1YmM3XkEyXkFqcGc@._V1_FMjpg_UX1000_.jpg",
+        codEmbed: '<iframe src="https://vidsrcme.ru/embed/tt0120382" scrolling="no" frameborder="0" allowfullscreen="true" webkitallowfullscreen="true" mozallowfullscreen="true" height="500px" width="100%"></iframe>'
+    },
+    {
+        id: "The Dictator (2012)",
+        titlu: "The Dictator (2012)",
+        tip: "film",
+        poster: "https://m.media-amazon.com/images/M/MV5BM2IwMDM3ZmQtNjQ3NS00OTFiLWI5YzEtYWE3YjI5NTk3YzkwXkEyXkFqcGc@._V1_FMjpg_UX1000_.jpg",
+        codEmbed: '<iframe src="https://vidsrcme.ru/embed/tt1645170" scrolling="no" frameborder="0" allowfullscreen="true" webkitallowfullscreen="true" mozallowfullscreen="true" height="500px" width="100%"></iframe>'
     },
     {
         id: "The Fantastic Four: First Steps (2025)",
