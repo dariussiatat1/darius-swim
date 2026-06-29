@@ -259,6 +259,13 @@ const filme = [
         codEmbed: '<iframe src="https://vidsrcme.ru/embed/tt0050083" scrolling="no" frameborder="0" allowfullscreen="true" webkitallowfullscreen="true" mozallowfullscreen="true" height="500px" width="100%"></iframe>'
     },
     {
+        id: "12 Years a Slave (2013)",
+        titlu: "12 Years a Slave (2013)",
+        tip: "film",
+        poster: "https://m.media-amazon.com/images/M/MV5BMjExMTEzODkyN15BMl5BanBnXkFtZTcwNTU4NTc4OQ@@._V1_FMjpg_UX1000_.jpg",
+        codEmbed: '<iframe src="https://vidsrcme.ru/embed/tt2024544" scrolling="no" frameborder="0" allowfullscreen="true" webkitallowfullscreen="true" mozallowfullscreen="true" height="500px" width="100%"></iframe>'
+    },
+    {
         id: "21 Jump Street (2012)",
         titlu: "21 Jump Street (2012)",
         tip: "film",
@@ -308,11 +315,25 @@ const filme = [
         codEmbed: '<iframe src="https://vidsrcme.ru/embed/tt6139732" scrolling="no" frameborder="0" allowfullscreen="true" webkitallowfullscreen="true" mozallowfullscreen="true" height="500px" width="100%"></iframe>'
     },
     {
+        id: "Alita: Battle Angel (2019)",
+        titlu: "Alita: Battle Angel (2019)",
+        tip: "film",
+        poster: "https://m.media-amazon.com/images/M/MV5BYmZhZGQzM2MtMWEyZC00YTU1LTk4YTQtMTg3ZjEzM2U1NTkxXkEyXkFqcGc@._V1_.jpg",
+        codEmbed: '<iframe src="https://vidsrcme.ru/embed/tt0437086" scrolling="no" frameborder="0" allowfullscreen="true" webkitallowfullscreen="true" mozallowfullscreen="true" height="500px" width="100%"></iframe>'
+    },
+    {
         id: "Baieti de oras: Golden Boyz (2026)",
         titlu: "Baieti de oras: Golden Boyz (2026)",
         tip: "film",
         poster: "https://m.media-amazon.com/images/M/MV5BOGRiY2M2MzUtZTg3My00MDY0LWIxMWYtYzVmZmJkZjgxNWEwXkEyXkFqcGc@._V1_FMjpg_UX1000_.jpg",
         codEmbed: '<iframe src="https://vidsrcme.ru/embed/tt39195606" scrolling="no" frameborder="0" allowfullscreen="true" webkitallowfullscreen="true" mozallowfullscreen="true" height="500px" width="100%"></iframe>'
+    },
+    {
+        id: "Baby Driver (2017)",
+        titlu: "Baby Driver (2017)",
+        tip: "film",
+        poster: "https://m.media-amazon.com/images/M/MV5BMjM3MjQ1MzkxNl5BMl5BanBnXkFtZTgwODk1ODgyMjI@._V1_FMjpg_UX1000_.jpg",
+        codEmbed: '<iframe src="https://vidsrcme.ru/embed/tt3890160" scrolling="no" frameborder="0" allowfullscreen="true" webkitallowfullscreen="true" mozallowfullscreen="true" height="500px" width="100%"></iframe>'
     },
     {
         id: "Bullet Train (2022)",
@@ -518,6 +539,13 @@ const filme = [
         codEmbed: '<iframe src="https://vidsrcme.ru/embed/tt0816692" scrolling="no" frameborder="0" allowfullscreen="true" webkitallowfullscreen="true" mozallowfullscreen="true" height="500px" width="100%"></iframe>'
     },
     {
+        id: "I, Robot (2004)",
+        titlu: "I, Robot (2004)",
+        tip: "film",
+        poster: "https://m.media-amazon.com/images/M/MV5BZDdhNTY3YTgtYmQwMC00MjM1LTgzYzMtMGM1N2E0NWM1NDlkXkEyXkFqcGc@._V1_FMjpg_UX1000_.jpg",
+        codEmbed: '<iframe src="https://vidsrcme.ru/embed/tt0343818" scrolling="no" frameborder="0" allowfullscreen="true" webkitallowfullscreen="true" mozallowfullscreen="true" height="500px" width="100%"></iframe>'
+    },
+    {
         id: "Knives Out (2019)",
         titlu: "Knives Out (2019)",
         tip: "film",
@@ -551,6 +579,13 @@ const filme = [
         tip: "film",
         poster: "https://m.media-amazon.com/images/M/MV5BMzUzNDM2NzM2MV5BMl5BanBnXkFtZTgwNTM3NTg4OTE@._V1_.jpg",
         codEmbed: '<video controls src="https://sod1.antenaplay.ro/antena1/2026/03/25/9d5d0ecec89c7df3c0a5ae7750d7afed39bf2f4dc10e0aa2593523b24fb86fcb_,480p-wide,720p-wide,1080p,.mp4.urlset/master.m3u8?version=1&session=6af6c42226e3a919c53c&starttime=1777817093&endtime=1777824293&source=web&guid=qITzS6RL7fX&token=caEcRxP6P_jIAdfvKwMC5ZfyG-I=" width="80%"></video>'
+    },
+    {
+        id: "Life of Pi (2012)",
+        titlu: "Life of Pi (2012)",
+        tip: "film",
+        poster: "https://m.media-amazon.com/images/M/MV5BNTg2OTY2ODg5OF5BMl5BanBnXkFtZTcwODM5MTYxOA@@._V1_FMjpg_UX1000_.jpg",
+        codEmbed: '<iframe src="https://vidsrcme.ru/embed/tt0454876" scrolling="no" frameborder="0" allowfullscreen="true" webkitallowfullscreen="true" mozallowfullscreen="true" height="500px" width="100%"></iframe>'
     },
     {
         id: "The Lego Batman Movie (2017)",
