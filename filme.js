@@ -294,6 +294,13 @@ const filme = [
         codEmbed: '<iframe src="https://vidsrcme.ru/embed/tt0086879" scrolling="no" frameborder="0" allowfullscreen="true" webkitallowfullscreen="true" mozallowfullscreen="true" height="500px" width="100%"></iframe>'
     },
     {
+        id: "A Bronx Tale (1993)",
+        titlu: "A Bronx Tale (1993)",
+        tip: "film",
+        poster: "https://m.media-amazon.com/images/M/MV5BZTZiZWFjY2UtMDYzOS00N2JhLTk5YmYtMGQ1Yjk5ZWYzZjI4XkEyXkFqcGc@._V1_.jpg",
+        codEmbed: '<iframe src="https://vidsrcme.ru/embed/tt0106489" scrolling="no" frameborder="0" allowfullscreen="true" webkitallowfullscreen="true" mozallowfullscreen="true" height="500px" width="100%"></iframe>'
+    },
+    {
         id: "American Psycho (2000)",
         titlu: "American Psycho (2000)",
         tip: "film",
@@ -546,6 +553,13 @@ const filme = [
         codEmbed: '<iframe src="https://vidsrcme.ru/embed/tt0343818" scrolling="no" frameborder="0" allowfullscreen="true" webkitallowfullscreen="true" mozallowfullscreen="true" height="500px" width="100%"></iframe>'
     },
     {
+        id: "Inglourious Basterds (2009)",
+        titlu: "Inglourious Basterds (2009)",
+        tip: "film",
+        poster: "https://m.media-amazon.com/images/M/MV5BODZhMWJlNjYtNDExNC00MTIzLTllM2ItOGQ2NGVjNDQ3MzkzXkEyXkFqcGc@._V1_.jpg",
+        codEmbed: '<iframe src="https://vidsrcme.ru/embed/tt0361748" scrolling="no" frameborder="0" allowfullscreen="true" webkitallowfullscreen="true" mozallowfullscreen="true" height="500px" width="100%"></iframe>'
+    },
+    {
         id: "Knives Out (2019)",
         titlu: "Knives Out (2019)",
         tip: "film",
@@ -665,6 +679,13 @@ const filme = [
         codEmbed: '<iframe src="https://vidsrcme.ru/embed/tt0293564" scrolling="no" frameborder="0" allowfullscreen="true" webkitallowfullscreen="true" mozallowfullscreen="true" height="500px" width="100%"></iframe>'
     },
     {
+        id: "RRR (2022)",
+        titlu: "RRR (2022)",
+        tip: "film",
+        poster: "https://m.media-amazon.com/images/M/MV5BNWMwODYyMjQtMTczMi00NTQ1LWFkYjItMGJhMWRkY2E3NDAyXkEyXkFqcGc@._V1_.jpg",
+        codEmbed: '<iframe src="https://vidsrcme.ru/embed/tt8178634" scrolling="no" frameborder="0" allowfullscreen="true" webkitallowfullscreen="true" mozallowfullscreen="true" height="500px" width="100%"></iframe>'
+    },
+    {
         id: "Scarface (1983)",
         titlu: "Scarface (1983)",
         tip: "film",
@@ -719,6 +740,13 @@ const filme = [
         tip: "film",
         poster: "https://m.media-amazon.com/images/M/MV5BNzA3ZjZlNzYtMTdjMy00NjMzLTk5ZGYtMTkyYzNiOGM1YmM3XkEyXkFqcGc@._V1_FMjpg_UX1000_.jpg",
         codEmbed: '<iframe src="https://vidsrcme.ru/embed/tt0120382" scrolling="no" frameborder="0" allowfullscreen="true" webkitallowfullscreen="true" mozallowfullscreen="true" height="500px" width="100%"></iframe>'
+    },
+    {
+        id: "The Odyssey (2026)",
+        titlu: "The Odyssey (2026)",
+        tip: "film",
+        poster: "https://m.media-amazon.com/images/M/MV5BNTcyNmJlZmQtNDUwYy00NDBjLTg1NGQtYTY2Y2UxMWM3NmI1XkEyXkFqcGc@._V1_FMjpg_UX1000_.jpg",
+        codEmbed: '<iframe src="https://vidsrcme.ru/embed/tt33764258" scrolling="no" frameborder="0" allowfullscreen="true" webkitallowfullscreen="true" mozallowfullscreen="true" height="500px" width="100%"></iframe>'
     },
     {
         id: "The Dictator (2012)",
