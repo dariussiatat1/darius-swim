@@ -882,11 +882,18 @@ const filme = [
         codEmbed: '<iframe width="640" height="360" data-src="https://playhydrax.com/?v=Tmp8oRvZ2" frameborder="0" scrolling="0" allowfullscreen="" src="https://playhydrax.com/?v=Tmp8oRvZ2" class="view-iframe"></iframe>'
     },
     {
+        id: "Princess Mononoke (1997)",
+        titlu: "Princess Mononoke (1997)",
+        tip: "film",
+        poster: "https://m.media-amazon.com/images/M/MV5BZTcyN2Y0MDYtMGI1NC00MWQ1LWFhZGMtN2U4NTcxZGYyNjljXkEyXkFqcGc@._V1_.jpg",
+        codEmbed: '<iframe width="640" height="360" data-src="https://playhydrax.com/?v=Sf1_YmY0r" frameborder="0" scrolling="0" allowfullscreen="" class="view-iframe" src="https://playhydrax.com/?v=Sf1_YmY0r"></iframe>'
+    },
+    {
         id: "Your Name. (2016)",
         titlu: "Your Name. (2016)",
         tip: "film",
         poster: "https://m.media-amazon.com/images/M/MV5BMjI1ODZkYTgtYTY3Yy00ZTJkLWFkOTgtZDUyYWM4MzQwNjk0XkEyXkFqcGc@._V1_FMjpg_UX1000_.jpg",
-        codEmbed: '<iframe width="640" height="360" data-src="https://playhydrax.com/?v=0j2zWJR0Q" frameborder="0" scrolling="0" allowfullscreen="" src="https://playhydrax.com/?v=0j2zWJR0Q" class="view-iframe"></iframe>'
+        codEmbed: '<iframe data-src="https://bysedikamoum.com/e/15l8v4cvxcae" frameborder="0" marginwidth="0" marginheight="0" scrolling="no" width="640" height="360" allowfullscreen="" src="https://bysedikamoum.com/e/15l8v4cvxcae" class="view-iframe"></iframe>'
     },
     {
         id: "I Want to Eat Your Pancreas (2018)",

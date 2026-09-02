@@ -1,7 +1,7 @@
 ![darius swim](https://dariussiatat1.github.io/darius-swim/logo.png)
 ## Passion driven free streaming service
 
-[darius swim] is home to currently **128** movies with many more to be added.
+[darius swim] is home to currently **129** movies with many more to be added.
 
 Site avalabile in 2 languages: _romanian_ and _english_.
 
