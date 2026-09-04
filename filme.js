@@ -893,7 +893,7 @@ const filme = [
         titlu: "Your Name. (2016)",
         tip: "film",
         poster: "https://m.media-amazon.com/images/M/MV5BMjI1ODZkYTgtYTY3Yy00ZTJkLWFkOTgtZDUyYWM4MzQwNjk0XkEyXkFqcGc@._V1_FMjpg_UX1000_.jpg",
-        codEmbed: '<iframe data-src="https://bysedikamoum.com/e/15l8v4cvxcae" frameborder="0" marginwidth="0" marginheight="0" scrolling="no" width="640" height="360" allowfullscreen="" src="https://bysedikamoum.com/e/15l8v4cvxcae" class="view-iframe"></iframe>'
+        codEmbed: '#'
     },
     {
         id: "I Want to Eat Your Pancreas (2018)",
